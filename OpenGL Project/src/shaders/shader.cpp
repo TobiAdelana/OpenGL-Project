@@ -3,7 +3,7 @@
 #include <string>
 
 
-Shader::Shader(const char* vertexSource, const char* fragmentSource) : m_VertexSource(vertexSource), m_FragmentSource(fragmentSource)
+Shader::Shader(const std::string& vertexSource, const std::string& fragmentSource) : m_VertexSource(vertexSource), m_FragmentSource(fragmentSource)
 { 
 
 	if (!load())
@@ -12,12 +12,13 @@ Shader::Shader(const char* vertexSource, const char* fragmentSource) : m_VertexS
 	}
 }
 
-void Shader::cleanUp()
+Shader::~Shader()
 {
 	glDeleteShader(m_VertexID);
 	glDeleteShader(m_FragmentID);
 	glDeleteProgram(m_programID);
 }
+
 void Shader::Uniform1f(const GLchar * name, GLfloat x)
 {
 	glUniform1f(glGetUniformLocation(this->m_programID, name), x);
@@ -41,12 +42,19 @@ void Shader::UseShader()
 }
 void Shader::UniformLight(const GLchar * name, Light light)
 {
+	std::string light_name = name;
+	glUniform3f(glGetUniformLocation(this->m_programID, (light_name + ".position").c_str()), light.m_position.x, light.m_position.y, light.m_position.z);
+	glUniform3f(glGetUniformLocation(this->m_programID, (light_name + ".colour").c_str()), light.m_colour.x, light.m_colour.y, light.m_colour.z);
 	
-	// TODO: Finish function
 }
 void Shader::UniformMatrix4f(const GLchar * name, GLsizei count, GLboolean transpose, mat4 matrix)
 {
 	glUniformMatrix4fv(glGetUniformLocation(this->m_programID,name), count, transpose, matrix.elements);
+}
+void Shader::UniformMaterial(const GLchar * name, Material material)
+{
+	std::string material_name = name;
+//	glUniform3f(glGetUniformLocation(m_programID, (name + ".ambientColour").c_str()), material.m_ambientColour.x, mater)
 }
 bool Shader::load()
 {
@@ -56,11 +64,26 @@ bool Shader::load()
 		std::cout << "Error occured when creating the vertex shader object" << std::endl;
 		return false;
 	}
-	glShaderSource(m_VertexID, 1, &m_VertexSource, NULL);
-	glCompileShader(m_VertexID);
-	m_FragmentID = glCreateShader(GL_FRAGMENT_SHADER);
 	GLint compileStatus = GL_FALSE;
-	glShaderSource(m_FragmentID, 1, &m_FragmentSource, NULL);
+	const char* strVertexSource = m_VertexSource.c_str();
+	const char* strFragmentSource = m_FragmentSource.c_str();
+	glShaderSource(m_VertexID, 1, &strVertexSource, NULL);
+	glCompileShader(m_VertexID);
+	glGetShaderiv(m_VertexID, GL_COMPILE_STATUS, &compileStatus);
+	if (compileStatus == GL_FALSE)
+	{
+		std::cout << "Failed to compile vertex shader" << std::endl;
+		GLint bufLength = 0;
+		glGetShaderiv(m_VertexID, GL_INFO_LOG_LENGTH, &bufLength);
+		char* buf = new char[bufLength];
+		glGetShaderInfoLog(m_VertexID, bufLength, NULL, buf);
+		std::cout << "Log: " << buf << std::endl;
+		delete[] buf;
+		return false;
+	}
+
+	m_FragmentID = glCreateShader(GL_FRAGMENT_SHADER);
+	glShaderSource(m_FragmentID, 1, &strFragmentSource, NULL);
 	glCompileShader(m_FragmentID);
 	glGetProgramiv(m_programID, GL_COMPILE_STATUS, &compileStatus);
 	if (!m_FragmentID)
@@ -102,7 +125,7 @@ bool Shader::load()
 			char* buf = (char*)malloc(bufLength);
 			if (buf) {
 				glGetProgramInfoLog(m_programID, bufLength, NULL, buf);
-				printf("Could not link program:\n%s\n", buf);
+				std::cout << "Could not link program: " << buf << '\n';
 				free(buf);
 			}
 		}

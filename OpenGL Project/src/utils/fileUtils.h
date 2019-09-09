@@ -1,35 +1,11 @@
 #pragma once
+#include "../graphics/Mesh.h"
 #include <iostream>
 #include <fstream>
 #include <string>
-class FileUtils
+#include <exception>
+struct FileUtils
 {
-public:
-	static char* LoadTextFile(const char* filePath)
-	{
-		
-		std::string line, final;
-		std::ifstream file(filePath);
-		if (file.is_open())
-		{
-			while (std::getline(file, line))
-			{
-				final += line + '\n';
-			}
-			file.close();
-		}
-		else 
-		{
-			std::cout << "Could not open: " << filePath << std::endl;
-			return "";
-		}
-		char * cstr = new char[final.length() + 1];
-		strcpy(cstr, final.c_str());
-		return cstr;
-		
-
-		
-
-	}
-
+	static std::string LoadTextFile(const char* filePath);
+	int LoadObjFile(const std::string& filepath, Mesh& output);
 };

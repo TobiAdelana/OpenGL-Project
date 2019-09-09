@@ -1,5 +1,5 @@
 #include "InputManager.h"
-
+#include <iostream>
 std::map<char*, Key> InputManager::keyboardKeys;
 bool InputManager::keyboardButtons[1024];
 // Temporary for Testing ------------------------
@@ -8,14 +8,13 @@ float timeStart;
 float timeEnd;
 float timeElapsed;
 // ----------------------------------------------
-void InputManager::RebindKey(char* name, Key key)
+void InputManager::RebindKey(char* name, const Key& key)
 {
 	keyboardKeys[name] = key;
 }
-
 float InputManager::GetAxis(char* name)
 {
-	Key result = keyboardKeys[name];
+	Key& result = keyboardKeys[name];
 	double sensitivity = result.m_sensitivity * Timer::GetDeltaTime();
 	double gravity = result.gravity * Timer::GetDeltaTime();
 
@@ -85,7 +84,6 @@ float InputManager::GetAxis(char* name)
 	}
 	
 	//-----------
-	keyboardKeys[name] = result;
 	return result.m_axis;
 	
 	
@@ -98,8 +96,7 @@ float InputManager::GetAxisRaw(char * name)
 		return -1.0f;
 	return 0.0f;
 }
-
-Key InputManager::GetKey(char* name)
+const Key& InputManager::GetKey(char* name)
 {
 	return keyboardKeys[name];
 }
@@ -108,32 +105,10 @@ void InputManager::Initalise()
 	
 	keyboardKeys.insert(std::pair<char*, Key>("Horizontal", Key(GLFW_KEY_D, GLFW_KEY_A, GLFW_KEY_RIGHT, GLFW_KEY_LEFT, 5, 0.01f, true, 5)));
 	keyboardKeys.insert(std::pair<char*, Key>("Vertical", Key(GLFW_KEY_W, GLFW_KEY_S, GLFW_KEY_UP, GLFW_KEY_DOWN, 3, 0.01f, true, 3)));
-	keyboardKeys.insert(std::pair<char*, Key>("Fire", Key(GLFW_MOUSE_BUTTON_1, GLFW_KEY_NONE, GLFW_KEY_NONE, GLFW_KEY_NONE, 1000, 0.01f, true, 10.0f)));
+	keyboardKeys.insert(std::pair<char*, Key>("Fire", Key(GLFW_MOUSE_BUTTON_1, GLFW_KEY_UNKNOWN, GLFW_KEY_UNKNOWN, GLFW_KEY_UNKNOWN, 1000, 0.01f, true, 10.0f)));
 	keyboardKeys.insert(std::pair<char*, Key>("A", Key(GLFW_KEY_W, GLFW_KEY_S, GLFW_KEY_UP, GLFW_KEY_DOWN, 1000, 0.01f, true, 10.0f)));
 	
 }
-/*
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
-{
-	switch (action)
-	{
-	case GLFW_PRESS:
-		InputManager::keyboardButtons[key] = true;
-		break;
-	case GLFW_RELEASE:
-		InputManager::keyboardButtons[key] = false;
-		break;
-	}
-}
-void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
-{
-	switch (action)
-	{
-	case GLFW_PRESS:
-		InputManager::mouseButtons[button] = true;
-		break;
-	case GLFW_RELEASE:
-		break;
-	}
-}
-*/
+
+
+

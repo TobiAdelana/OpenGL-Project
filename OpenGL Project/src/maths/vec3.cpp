@@ -1,24 +1,6 @@
 #include "vec3.h"
 #include <iostream>
 
-vec3::vec3()
-{
-	x = 0.0f;
-	y = 0.0f;
-	z = 0.0f;
-}
-
-vec3::vec3(float x, float y, float z)
-{
-	this->x = x;
-	this->y = y;
-	this->z = z;
-}
-
-vec3::vec3(const vec2 start, float z) : z(0.0f)
-{
-	vec3(start.x, start.y, z);
-}
 vec3& vec3::cross(const vec3& other)
 {
 	float xComp = (y * other.z) - (z * other.y);
@@ -159,13 +141,15 @@ vec3& vec3::operator/= (const float other)
 //	multiply(other);
 //	return *this;
 //}
-bool vec3::operator== (const vec3& other)
+
+
+bool operator==(const vec3& lhs, const vec3& rhs)
 {
-	return (x == other.x) && (y == other.y) && (z == other.z);
+	return(lhs.x == rhs.x) && (lhs.y == rhs.y) && (lhs.z == rhs.z);
 }
-bool vec3::operator!= (const vec3& other)
+bool operator!= (const vec3& lhs, const vec3& rhs)
 {
-	return !(*this == other);
+	return !(lhs == rhs);
 }
 std::ostream& operator<<(std::ostream& stream, const vec3& vector)
 {
@@ -175,7 +159,6 @@ std::ostream& operator<<(std::ostream& stream, const vec3& vector)
 
 float vec3::dot(const vec3& other)
 {
-
 	return (x * other.x) + (y * other.y) + (z * other.z);
 }
 

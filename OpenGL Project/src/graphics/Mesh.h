@@ -3,9 +3,12 @@
 #include "../shaders/shader.h"
 #include "../shaders/Uniform.h"
 #include <sstream>
+#include <fstream>
 #include <string>
 #include <vector>
-#include <GL\glew.h>
+#include <iterator>
+
+#include <GL/glew.h>
 
 struct Vertex
 {
@@ -31,14 +34,14 @@ public:
 	std::vector<Vertex> m_vertices;
 	std::vector<Texture>m_textures;
 	std::vector<GLuint> m_indices;
-
-	Mesh(std::vector<Vertex> vertices,  std::vector<GLuint> indices, std::vector<Texture> textures);
-	Mesh(std::vector<Vertex> vertices, std::vector<GLuint> indices);
-	Mesh(const char* fileName);
+	Mesh() {};
+	Mesh(const std::vector<Vertex>& vertices,	const std::vector<GLuint>& indices, const std::vector<Texture>& textures);
+	Mesh(const std::vector<Vertex>& vertices,	const std::vector<GLuint>& indices);
 	~Mesh();
 	bool Draw(Shader shader);
+	bool LoadObj(const std::string& filename);
 private:
-	GLuint VBO, VAO, EBO;
-	void cleanUp();
+	GLuint VBO =0, VAO= 0, EBO =0;
+	unsigned int indexCount = 0;
 	void init();
 };

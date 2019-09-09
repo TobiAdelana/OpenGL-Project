@@ -1,6 +1,13 @@
 #include "Window.h"
 #include <iostream>
+#include <functional>
+
+#ifdef DEBUG
 #define log(x) std::cout << x << std::endl
+#else
+#define log(x) (void)0
+#endif
+
 
 Window::Window(uint width, uint height, const char* title, bool fullscreen) 
 	: m_width(width), m_height(height), m_title(title), m_fullscreen(fullscreen)
@@ -8,8 +15,17 @@ Window::Window(uint width, uint height, const char* title, bool fullscreen)
 	if (!init())
 	{
 		glfwTerminate();
+		throw std::exception("Window could not initalise");
 	}
+	glfwSetWindowUserPointer(m_window, this);
 }
+
+Window::~Window()
+{
+	glfwDestroyWindow(m_window);
+	glfwTerminate();
+}
+
 
 
 
@@ -28,7 +44,7 @@ bool Window::init()
 	glfwWindowHint(GLFW_DECORATED, GL_TRUE);
 	m_window = glfwCreateWindow(m_width, m_height, m_title, m_fullscreen ? glfwGetPrimaryMonitor() : NULL, NULL);
 	log(mode->width << ", " << mode -> height);
-	glfwSetWindowPos(m_window, (mode->width - m_width) * 0.5f, (mode->height - m_height) * 0.5f);
+	glfwSetWindowPos(m_window, (mode->width - m_width) /2 , (mode->height - m_height) /2);
 	if (!m_window)
 	{
 		std::cout << "Could not create GLFW window" << std::endl;
@@ -52,7 +68,7 @@ bool Window::isClosed() const
 	return glfwWindowShouldClose(m_window);
 }
 
-void Window::clear()
+void Window::ClearScreen()
 {	
 	int width, height;
 	glfwGetFramebufferSize(m_window, &width, &height);
@@ -65,49 +81,52 @@ void Window::clear()
 	deltaTime = currentTime - lastTime;
 	lastTime = currentTime;
 }
-void Window::cleanUp()
+void Window::update() 
 {
-	glfwDestroyWindow(m_window);
-	glfwTerminate();
-}
-void Window::update() const 
-{
+	old_cursor_pos = cursor_pos;
 	glfwSwapBuffers(m_window);
 	glfwPollEvents();
+	double x, y;
+	glfwGetCursorPos(m_window, &x,&y);
+	cursor_pos.x = x;
+	cursor_pos.y = y;
 }
 
 
-Window& Window::SetFullScreen(bool fullscreen)
-{
-	if (fullscreen == m_fullscreen)
-		return *this;
-	glfwDestroyWindow(m_window);
-	Window(m_width, m_height, m_title, fullscreen);
-	m_fullscreen = fullscreen;
 
-	return *this;
-}
-
-Window& Window::SetWindowSize(uint width, uint height) 
+void Window::SetWindowSize(uint width, uint height) 
 {
 	
 	glfwSetWindowSize(m_window, width, height);
 	m_width = width;
+
 	m_height = height;
 
-	return *this;
 }
 
-Window& Window::SetCursorVisible(bool visible)
+void Window::SetCursorVisible(bool visible)
 {
 	glfwSetInputMode(m_window, GLFW_CURSOR, visible ? GLFW_CURSOR_NORMAL : GLFW_CURSOR_DISABLED);
-	return *this;
 }
-vec2 Window::GetMousePos() 
+void default_callback(GLFWwindow* gWindow, int key, int scancode, int action, int mods)
 {
-	double xpos, ypos;
-	glfwGetCursorPos(m_window, &xpos, &ypos);
-	return vec2((float)xpos, (float)ypos);
+	Window& win = *static_cast<Window*>(glfwGetWindowUserPointer(gWindow));
+	win.keys[key] = (action != GLFW_RELEASE);
+}
+
+void Window::SetCursorEnabled(bool enable)
+{
+	m_enabled = enable;
+	glfwSetInputMode(m_window, GLFW_CURSOR, enable ? GLFW_CURSOR_NORMAL : GLFW_CURSOR_DISABLED);
+}
+vec2 Window::GetMousePos()
+{
+	return cursor_pos;
+}
+
+vec2 Window::GetDeltaPos()
+{
+	return cursor_pos - old_cursor_pos;
 }
 
 /*

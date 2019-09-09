@@ -26,11 +26,16 @@ struct Material
 	Material& SetRoughness(float roughness);
 	Material& SetRoughness(Texture roughness);
 	*/
+	Material(vec3 diffuse);
 	auto GetAlbedo();
 	auto GetRoughness();
 	auto GetSpecular();
-private:
-	
+public:
+	vec3 m_diffuseColour;
+	vec3 m_specularColour;
+	vec3 m_specColour;
+	vec3 m_ambientColour;
+	float m_shininess;
 
 };
 

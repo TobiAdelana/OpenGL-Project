@@ -7,11 +7,7 @@ float Math::Lerp(float a, float b, float t)
 }
 float Math::Clamp(float value, float min, float max)
 {
-	if (value > max)
-		value = max;
-	else if (value < min)
-		value = min;
-	return value;
+	return Max(Min(value, max), min);
 }
 float Math::Min(float value, float min)
 {

@@ -1,9 +1,9 @@
 #pragma once
-#include <iostream>
+#include <ostream>
 struct vec2 {
-	float x, y;
-	vec2();
-	vec2(float x, float y);
+	float x = 0, y = 0;
+	constexpr vec2() {};
+	constexpr vec2(float x_, float y_) : x(x_), y(y_) {};
 	vec2& add(const vec2& other);
 	vec2& subtract(const vec2& other);
 	vec2& multiply(const vec2& other);

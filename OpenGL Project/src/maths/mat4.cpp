@@ -1,13 +1,6 @@
 #include "mat4.h"
 #include "maths.h"
-
-mat4::mat4()
-{
-	for (int i = 0; i < 16; i++)
-	{
-		elements[i] = 0.0f;
-	}
-}
+#include <iostream>
 
 mat4::mat4(float elements[16])
 {
@@ -41,8 +34,7 @@ mat4& mat4::multiply(const mat4 & other)
 			data[x + y * 4] = sum;
 		}
 	}
-	memcpy(elements, data, 16 * sizeof(float));
-
+	memcpy(elements, data, 16 * sizeof(*elements));
 	return *this;
 }
 mat4& mat4::multiply(const float other)

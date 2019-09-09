@@ -25,7 +25,7 @@ Quaternion Quaternion::Inverse()
 }
 
 
-Quaternion& Quaternion::Multiply(const Quaternion& left, const Quaternion& right)
+Quaternion Quaternion::Multiply(const Quaternion& left, const Quaternion& right)
 {
 	float rw = right.w * left.w - vec3::dot(left.v,right.v);
 	vec3 vector;
@@ -35,7 +35,7 @@ Quaternion& Quaternion::Multiply(const Quaternion& left, const Quaternion& right
 
 }
 
-Quaternion& Quaternion::Multiply(float factor, const Quaternion & quat)
+Quaternion Quaternion::Multiply(float factor, const Quaternion & quat)
 {
 	float w = quat.w * factor;
 	vec3 vector = quat.v * factor;
@@ -43,7 +43,7 @@ Quaternion& Quaternion::Multiply(float factor, const Quaternion & quat)
 	return result;
 }
 
-Quaternion & Quaternion::Divide(const Quaternion & quat, float factor)
+Quaternion  Quaternion::Divide(const Quaternion & quat, float factor)
 {
 	float w = quat.w / factor;
 	float x = quat.v.x / factor;
@@ -53,7 +53,7 @@ Quaternion & Quaternion::Divide(const Quaternion & quat, float factor)
 	return result;
 }
 
-Quaternion & Quaternion::TransformVector(const Quaternion& quat, const vec3 & vector)
+Quaternion  Quaternion::TransformVector(const Quaternion& quat, const vec3 & vector)
 {
 	Quaternion p = Quaternion(0, vector);
 	Quaternion norm = Quaternion::Normalise(quat);
@@ -61,13 +61,13 @@ Quaternion & Quaternion::TransformVector(const Quaternion& quat, const vec3 & ve
 	return res;
 }
 
-Quaternion & Quaternion::Normalise(const Quaternion & quat)
+Quaternion  Quaternion::Normalise(const Quaternion & quat)
 {
 	Quaternion result = quat / quat.GetMagnitude();
 	return result;
 }
 
-Quaternion & Quaternion::Add(const Quaternion & left, const Quaternion & right)
+Quaternion  Quaternion::Add(const Quaternion & left, const Quaternion & right)
 {
 	float w = left.w + right.w;
 	vec3 vec = left.v + right.v;
@@ -75,7 +75,7 @@ Quaternion & Quaternion::Add(const Quaternion & left, const Quaternion & right)
 	return res;
 }
 
-Quaternion & Quaternion::EulerToQuat(const vec3 & other)
+Quaternion  Quaternion::EulerToQuat(const vec3 & other)
 {
 	float c1 = cos(other.y / 2);
 	float c2 = cos(other.z / 2);
@@ -119,30 +119,24 @@ mat3 Quaternion::ToMatrix()
 	return mat3(elements);
 }
 
-Quaternion& operator* (float left, const Quaternion& right)
+Quaternion operator* (float left, const Quaternion& right)
 {
-	Quaternion result = Quaternion::Multiply(left, right);
-	return result;
+	return Quaternion::Multiply(left, right);
 }
-
-Quaternion& operator* (const Quaternion& quat, float factor)
+Quaternion operator* (const Quaternion& quat, float factor)
 {
-	Quaternion result = Quaternion::Multiply(factor, quat);
-	return result;
+	return Quaternion::Multiply(factor, quat);
 }
 Quaternion operator*(const Quaternion& left, const Quaternion& right)
 {
-	Quaternion result = Quaternion::Multiply(left, right);
-	return result;
+	return Quaternion::Multiply(left, right);
 
 }
-Quaternion& operator+ (const Quaternion& left, const Quaternion& right)
+Quaternion operator+ (const Quaternion& left, const Quaternion& right)
 {
-	Quaternion result = Quaternion::Add(left, right);
-	return result;
+	return Quaternion::Add(left, right);
 }
-Quaternion& operator/ (const Quaternion& quat, float factor)
+Quaternion operator/ (const Quaternion& quat, float factor)
 {
-	Quaternion result = Quaternion::Divide(quat, factor);
-	return result;
-}
+	return Quaternion::Divide(quat, factor);
+}		   

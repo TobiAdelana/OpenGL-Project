@@ -1,0 +1,84 @@
+-r
+C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\OpenGL Project\My Advisor Results - OpenGL Project\e000\hs000
+-type
+cpu:stack
+--mrte-mode=auto
+--follow-child
+--return-app-exitcode
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--stackwalk=offline
+--mrte-type=java,dotnet,python
+--bandwidth-config=dram,mcdram,cpu_cache,flop_peak
+--search-dir
+sym=C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug
+--search-dir
+sym=C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project
+--search-dir
+bin=C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug
+--search-dir
+bin=C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project
+--search-dir
+bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018\windows\bin\intel64
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX64\x86
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX64\x64
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide
+--search-dir
+bin=C:\Program Files (x86)\HTML Help Workshop
+--search-dir
+bin=C:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x64
+--search-dir
+bin=C:\WINDOWS\SysWow64
+--search-dir
+bin=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.0.124\windows\mpi\intel64\bin
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler
+--search-dir
+bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler
+--search-dir
+bin=C:\VulkanSDK\1.0.30.0\Bin
+--search-dir
+bin=C:\ProgramData\Oracle\Java\javapath
+--search-dir
+bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+--search-dir
+bin=C:\Program Files\Java\jdk1.8.0_31\bin
+--search-dir
+bin=C:\Program Files (x86)\Windows Live\Shared
+--search-dir
+bin=C:\WINDOWS\system32\config\systemprofile\.dnx\bin
+--search-dir
+bin=C:\Program Files\Microsoft DNX\Dnvm
+--search-dir
+bin=C:\WINDOWS\system32
+--search-dir
+bin=C:\WINDOWS
+--search-dir
+bin=C:\WINDOWS\System32\Wbem
+--search-dir
+bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0
+--search-dir
+bin=C:\Program Files\CMake\bin
+--search-dir
+bin=C:\Users\Tobi\AppData\Local\Programs\Python\Python35-32
+--search-dir
+bin=C:\Program Files\PuTTY
+--search-dir
+bin=C:\Users\Tobi\.dnx\bin
+--search-dir
+bin=C:\MinGW\bin
+--search-dir
+bin=C:/Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\OpenGL Project\%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
+--
+C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe

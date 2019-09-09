@@ -1,0 +1,762 @@
+# callstacks file version: 2
+#    rowid |    parent |       rva | loop | system |                                function | binary | instance rva
+         1 |        -1 |      4876 |    0 |      0 |                          mainCRTStartup | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 261184
+         2 |        -1 |    415740 |    0 |      1 |                         func@0x4b2e57e2 | C:\Windows\SysWOW64\ntdll.dll | 415714
+         3 |         2 |    415788 |    0 |      1 |                         func@0x4b2e57fe | C:\Windows\SysWOW64\ntdll.dll | 415742
+         4 |         3 |    100163 |    0 |      1 |                     BaseThreadInitThunk | C:\Windows\SysWOW64\kernel32.dll | 100128
+         5 |         4 |    261191 |    0 |      0 |                          mainCRTStartup | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 261184
+         6 |         5 |    260364 |    0 |      0 |                       _scrt_common_main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 260352
+         7 |         6 |    260719 |    0 |      0 |                   _scrt_common_main_seh | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 260384
+         8 |         7 |    261069 |    0 |      0 |                             invoke_main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 261040
+         9 |         8 |    117560 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+        10 |       685 |    123194 |    1 |      0 |[Loop at line 16 in FileUtils::LoadTextFile] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 122982
+        11 |        10 |    126229 |    0 |      0 |std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::operator+= | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 126184
+        12 |        11 |    126450 |    0 |      0 |std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::append | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 126352
+        13 |        12 |    126819 |    0 |      0 |std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::append | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 126504
+        14 |        13 |    131034 |    0 |      0 |std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Reallocate_grow_by | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 130776
+        15 |        14 |     22041 |    0 |      0 |     std::_Container_base12::_Orphan_all | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 21852
+        16 |        15 |    255156 |    0 |      0 |                      RTC_CheckStackVars | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 255152
+        17 |         8 |    117628 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+        18 |        17 |    184140 |    0 |      0 |                          Shader::Shader | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 184084
+        19 |        18 |    186652 |    0 |      0 |                            Shader::load | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 185198
+        20 |        19 |   2766305 |    0 |      1 |                         func@0x102a35a0 | C:\Windows\SysWOW64\ig75icd32.dll | 2766240
+        21 |        20 |   1279856 |    0 |      1 |                         func@0x10138770 | C:\Windows\SysWOW64\ig75icd32.dll | 1279856
+        22 |        20 |   1280049 |    0 |      1 |                         func@0x10138770 | C:\Windows\SysWOW64\ig75icd32.dll | 1279856
+        23 |        22 |   1279673 |    0 |      1 |                         func@0x10138600 | C:\Windows\SysWOW64\ig75icd32.dll | 1279488
+        24 |        23 |   1277714 |    0 |      1 |                         func@0x10137360 | C:\Windows\SysWOW64\ig75icd32.dll | 1274720
+        25 |       719 |   5186155 |    1 |      1 |    [Loop@0x104f2167 in func@0x104f20b0] | C:\Windows\SysWOW64\ig75icd32.dll | 5185895
+        26 |        25 |   5174801 |    0 |      1 |                         func@0x104ef5d0 | C:\Windows\SysWOW64\ig75icd32.dll | 5174736
+        27 |        26 |   5175524 |    0 |      1 |                         func@0x104ef840 | C:\Windows\SysWOW64\ig75icd32.dll | 5175360
+        28 |        27 |   5304867 |    0 |      1 |                         func@0x1050f1a0 | C:\Windows\SysWOW64\ig75icd32.dll | 5304736
+        29 |        28 |   5304697 |    0 |      1 |                         func@0x1050f0a0 | C:\Windows\SysWOW64\ig75icd32.dll | 5304480
+        30 |        29 |    510298 |    0 |      1 |                         func@0x1007c780 | C:\Windows\SysWOW64\igdusc32.dll | 509824
+        31 |        30 |   3890462 |    0 |      1 |                         func@0x103b5b40 | C:\Windows\SysWOW64\igdusc32.dll | 3889984
+        32 |        31 |    966844 |    0 |      1 |                         func@0x100ebfb0 | C:\Windows\SysWOW64\igdusc32.dll | 966576
+        33 |        32 |    966485 |    0 |      1 |                         func@0x100ebe60 | C:\Windows\SysWOW64\igdusc32.dll | 966240
+        34 |        33 |    965213 |    0 |      1 |                         func@0x100eb880 | C:\Windows\SysWOW64\igdusc32.dll | 964736
+        35 |        34 |    959269 |    0 |      1 |                         func@0x100ea180 | C:\Windows\SysWOW64\igdusc32.dll | 958848
+        36 |       672 |    957165 |    1 |      1 |    [Loop@0x100e9985 in func@0x100e9900] | C:\Windows\SysWOW64\igdusc32.dll | 956805
+        37 |        36 |   1319334 |    0 |      1 |                         func@0x10142010 | C:\Windows\SysWOW64\igdusc32.dll | 1318928
+        38 |        37 |   2088478 |    0 |      1 |                         func@0x101fdde0 | C:\Windows\SysWOW64\igdusc32.dll | 2088416
+        39 |        38 |   1228099 |    0 |      1 |                         func@0x1012bbb0 | C:\Windows\SysWOW64\igdusc32.dll | 1227696
+        40 |        39 |   2147621 |    0 |      1 |                         func@0x1020c510 | C:\Windows\SysWOW64\igdusc32.dll | 2147600
+        41 |        40 |   1613816 |    0 |      1 |                         func@0x10189bb0 | C:\Windows\SysWOW64\igdusc32.dll | 1612720
+        42 |        27 |   5304783 |    0 |      1 |                         func@0x1050f1a0 | C:\Windows\SysWOW64\ig75icd32.dll | 5304736
+        43 |        42 |   5305094 |    0 |      1 |                         func@0x1050f260 | C:\Windows\SysWOW64\ig75icd32.dll | 5304928
+        44 |        43 |    491388 |    0 |      1 |                         func@0x10077f20 | C:\Windows\SysWOW64\igdusc32.dll | 491296
+        45 |       674 |    491093 |    1 |      1 |    [Loop@0x10077e10 in func@0x10077d8d] | C:\Windows\SysWOW64\igdusc32.dll | 491024
+        46 |        45 |   4140288 |    0 |      1 | USC::CShaderInstruction::ReadFromStream | C:\Windows\SysWOW64\igdusc32.dll | 4138928
+        47 |        46 |    524105 |    0 |      1 |                         func@0x1007ff0c | C:\Windows\SysWOW64\igdusc32.dll | 524044
+        48 |        47 |    528358 |    0 |      1 |                         func@0x10080fe0 | C:\Windows\SysWOW64\igdusc32.dll | 528352
+        49 |        18 |    187126 |    0 |      0 |                            Shader::load | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 185198
+        50 |        49 |   2773969 |    0 |      1 |                         func@0x102a5390 | C:\Windows\SysWOW64\ig75icd32.dll | 2773904
+        51 |        50 |   1247921 |    0 |      1 |                         func@0x101308a0 | C:\Windows\SysWOW64\ig75icd32.dll | 1247392
+        52 |        51 |   1280786 |    0 |      1 |                         func@0x10138a60 | C:\Windows\SysWOW64\ig75icd32.dll | 1280608
+        53 |        52 |   1269692 |    0 |      1 |                         func@0x10135f90 | C:\Windows\SysWOW64\ig75icd32.dll | 1269648
+        54 |       721 |   1270613 |    1 |      1 |    [Loop@0x10136340 in func@0x101362e0] | C:\Windows\SysWOW64\ig75icd32.dll | 1270592
+        55 |        54 |   1492616 |    0 |      1 |                         func@0x1016c2bd | C:\Windows\SysWOW64\ig75icd32.dll | 1491645
+        56 |        55 |    261186 |    0 |      1 |                         func@0x1003fc30 | C:\Windows\SysWOW64\ig75icd32.dll | 261168
+        57 |        56 |    436351 |    0 |      1 |                           TpWaitForWork | C:\Windows\SysWOW64\ntdll.dll | 436320
+        58 |        57 |    314700 |    0 |      1 |                         func@0x4b2ccd1e | C:\Windows\SysWOW64\ntdll.dll | 314654
+        59 |        58 |    653236 |    0 |      1 |                         func@0x4b31f792 | C:\Windows\SysWOW64\ntdll.dll | 653202
+        60 |        59 |    473404 |    0 |      1 |                NtWaitForAlertByThreadId | C:\Windows\SysWOW64\ntdll.dll | 473392
+        61 |       687 |    119815 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+        62 |        61 |     62308 |    0 |      0 |                          Window::update | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 62266
+        63 |       689 |    249481 |    1 |      0 |        [Loop@0x43ce84 in func@0x43ce50] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 249476
+        64 |        63 |     16682 |    0 |      1 |                                DwmFlush | C:\Windows\SysWOW64\dwmapi.dll | 16624
+        65 |        64 |     40854 |    0 |      1 |                         func@0x10009f7a | C:\Windows\SysWOW64\dwmapi.dll | 40826
+        66 |        65 |     77190 |    0 |      1 |                         func@0x10012cc0 | C:\Windows\SysWOW64\dwmapi.dll | 76992
+        67 |        66 |   1646961 |    0 |      1 |                         func@0x55191f86 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1646470
+        68 |        67 |    466748 |    0 |      1 |                  NtRequestWaitReplyPort | C:\Windows\SysWOW64\ntdll.dll | 466736
+        69 |       687 |    119015 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+        70 |        69 |     66823 |    0 |      0 |                         std::operator<< | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 65676
+        71 |        70 |    479821 |    0 |      1 |std::basic_streambuf<char,struct std::char_traits<char> >::sputn | C:\Windows\SysWOW64\msvcp140d.dll | 479776
+        72 |       701 |    161424 |    1 |      1 |[Loop@0x100275c7 in std::basic_streambuf<char,struct std::char_traits<char> >::xsputn] | C:\Windows\SysWOW64\msvcp140d.dll | 161223
+        73 |        72 |    154188 |    0 |      1 |                         func@0x10025960 | C:\Windows\SysWOW64\msvcp140d.dll | 153952
+        74 |        73 |    111794 |    0 |      1 |                         func@0x1001b4a0 | C:\Windows\SysWOW64\msvcp140d.dll | 111776
+        75 |        74 |    764467 |    0 |      1 |                                   fputc | C:\Windows\SysWOW64\ucrtbased.dll | 763952
+        76 |        75 |    763806 |    0 |      1 |                            fputc_nolock | C:\Windows\SysWOW64\ucrtbased.dll | 763728
+        77 |        76 |    962397 |    0 |      1 |                         func@0x100eaf40 | C:\Windows\SysWOW64\ucrtbased.dll | 962368
+        78 |        77 |    960969 |    0 |      1 |                         func@0x100ea810 | C:\Windows\SysWOW64\ucrtbased.dll | 960528
+        79 |        78 |    961901 |    0 |      1 |                         func@0x100eabe0 | C:\Windows\SysWOW64\ucrtbased.dll | 961504
+        80 |        79 |    694700 |    0 |      1 |                                   write | C:\Windows\SysWOW64\ucrtbased.dll | 694176
+        81 |        80 |    695479 |    0 |      1 |                         func@0x100a99f0 | C:\Windows\SysWOW64\ucrtbased.dll | 694768
+        82 |       676 |    692822 |    1 |      1 |    [Loop@0x100a9166 in func@0x100a9100] | C:\Windows\SysWOW64\ucrtbased.dll | 692582
+        83 |        82 |    952158 |    0 |      1 |                               WriteFile | C:\Windows\SysWOW64\KernelBase.dll | 952048
+        84 |        83 |    466300 |    0 |      1 |                             NtWriteFile | C:\Windows\SysWOW64\ntdll.dll | 466288
+        85 |        62 |    249499 |    0 |      0 |                           func@0x43ce50 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 249424
+        86 |        85 |    937653 |    0 |      1 |                             SwapBuffers | C:\Windows\SysWOW64\gdi32full.dll | 937600
+        87 |        86 |    185670 |    0 |      1 |                          wglSwapBuffers | C:\Windows\SysWOW64\opengl32.dll | 185552
+        88 |        87 |    134718 |    0 |      1 |                         func@0x69220df1 | C:\Windows\SysWOW64\opengl32.dll | 134641
+        89 |        88 |   4348780 |    0 |      1 |                          DrvSwapBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4348528
+        90 |        89 |    808179 |    0 |      1 |                         func@0x100c5460 | C:\Windows\SysWOW64\ig75icd32.dll | 808032
+        91 |        90 |    738057 |    0 |      1 |                         func@0x100b42a0 | C:\Windows\SysWOW64\ig75icd32.dll | 737952
+        92 |        91 |   1410510 |    0 |      1 |                         func@0x10158540 | C:\Windows\SysWOW64\ig75icd32.dll | 1410368
+        93 |        92 |    403216 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+        94 |        93 |    378583 |    0 |      1 |                         func@0x1005c3f0 | C:\Windows\SysWOW64\ig75icd32.dll | 377840
+        95 |        94 |   4392966 |    0 |      1 |                         func@0x104303c0 | C:\Windows\SysWOW64\ig75icd32.dll | 4391872
+        96 |        95 |    307944 |    0 |      1 |                 RtlEnterCriticalSection | C:\Windows\SysWOW64\ntdll.dll | 307920
+        97 |        88 |   4349132 |    0 |      1 |                          DrvSwapBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4348528
+        98 |        97 |    132795 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+        99 |        98 |     60804 |    0 |      1 |         DwmpDxUpdateWindowSharedSurface | C:\Windows\SysWOW64\dwmapi.dll | 60560
+       100 |        99 |     41086 |    0 |      1 |                         func@0x1000a06c | C:\Windows\SysWOW64\dwmapi.dll | 41068
+       101 |       100 |     76927 |    0 |      1 |                         func@0x10012bc0 | C:\Windows\SysWOW64\dwmapi.dll | 76736
+       102 |       101 |    471996 |    0 |      1 |                           NtRequestPort | C:\Windows\SysWOW64\ntdll.dll | 471984
+       103 |       687 |    119147 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       104 |       103 |    423325 |    0 |      1 |std::basic_ostream<char,struct std::char_traits<char> >::operator<< | C:\Windows\SysWOW64\msvcp140d.dll | 423296
+       105 |       104 |     68169 |    0 |      0 |                               std::endl | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 68064
+       106 |       105 |    467003 |    0 |      1 |std::basic_ostream<char,struct std::char_traits<char> >::put | C:\Windows\SysWOW64\msvcp140d.dll | 466864
+       107 |       106 |    200686 |    0 |      1 |std::basic_streambuf<char,struct std::char_traits<char> >::sputc | C:\Windows\SysWOW64\msvcp140d.dll | 200576
+       108 |       107 |    154188 |    0 |      1 |                         func@0x10025960 | C:\Windows\SysWOW64\msvcp140d.dll | 153952
+       109 |       108 |    111794 |    0 |      1 |                         func@0x1001b4a0 | C:\Windows\SysWOW64\msvcp140d.dll | 111776
+       110 |       109 |    764467 |    0 |      1 |                                   fputc | C:\Windows\SysWOW64\ucrtbased.dll | 763952
+       111 |       110 |    763806 |    0 |      1 |                            fputc_nolock | C:\Windows\SysWOW64\ucrtbased.dll | 763728
+       112 |       111 |    962397 |    0 |      1 |                         func@0x100eaf40 | C:\Windows\SysWOW64\ucrtbased.dll | 962368
+       113 |       112 |    960969 |    0 |      1 |                         func@0x100ea810 | C:\Windows\SysWOW64\ucrtbased.dll | 960528
+       114 |       113 |    961901 |    0 |      1 |                         func@0x100eabe0 | C:\Windows\SysWOW64\ucrtbased.dll | 961504
+       115 |       114 |    694700 |    0 |      1 |                                   write | C:\Windows\SysWOW64\ucrtbased.dll | 694176
+       116 |       115 |    695479 |    0 |      1 |                         func@0x100a99f0 | C:\Windows\SysWOW64\ucrtbased.dll | 694768
+       117 |       678 |    692822 |    1 |      1 |    [Loop@0x100a9166 in func@0x100a9100] | C:\Windows\SysWOW64\ucrtbased.dll | 692582
+       118 |       117 |    952158 |    0 |      1 |                               WriteFile | C:\Windows\SysWOW64\KernelBase.dll | 952048
+       119 |       118 |    466300 |    0 |      1 |                             NtWriteFile | C:\Windows\SysWOW64\ntdll.dll | 466288
+       120 |        97 |    132658 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+       121 |       120 |     46787 |    0 |      1 |                         func@0x1000b343 | C:\Windows\SysWOW64\dwmapi.dll | 45891
+       122 |       121 |     40854 |    0 |      1 |                         func@0x10009f7a | C:\Windows\SysWOW64\dwmapi.dll | 40826
+       123 |       122 |     77190 |    0 |      1 |                         func@0x10012cc0 | C:\Windows\SysWOW64\dwmapi.dll | 76992
+       124 |       123 |   1646987 |    0 |      1 |                         func@0x55191f86 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1646470
+       125 |       124 |   1647040 |    0 |      1 |                         func@0x551921a6 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1647014
+       126 |       125 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       127 |       126 |1857908736 |    0 |      0 |              [Outside any known module] | n/a | 0
+       128 |        88 |   4349114 |    0 |      1 |                          DrvSwapBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4348528
+       129 |       128 |   4428469 |    0 |      1 |                         func@0x10439290 | C:\Windows\SysWOW64\ig75icd32.dll | 4428432
+       130 |       129 |    105252 |    0 |      1 |                           GetClientRect | C:\Windows\SysWOW64\user32.dll | 105136
+       131 |        88 |   4348629 |    0 |      1 |                          DrvSwapBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4348528
+       132 |       131 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       133 |       132 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       134 |       687 |    119109 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       135 |       134 |    420652 |    0 |      1 |std::basic_ostream<char,struct std::char_traits<char> >::operator<< | C:\Windows\SysWOW64\msvcp140d.dll | 420320
+       136 |       135 |    467866 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::put | C:\Windows\SysWOW64\msvcp140d.dll | 467808
+       137 |       136 |    197110 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put | C:\Windows\SysWOW64\msvcp140d.dll | 197008
+       138 |       137 |    189619 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Iput | C:\Windows\SysWOW64\msvcp140d.dll | 188656
+       139 |       703 |    192122 |    1 |      1 |[Loop@0x1002ee45 in std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Put] | C:\Windows\SysWOW64\msvcp140d.dll | 192069
+       140 |       139 |    178497 |    0 |      1 |                         func@0x1002b920 | C:\Windows\SysWOW64\msvcp140d.dll | 178464
+       141 |       140 |    200686 |    0 |      1 |std::basic_streambuf<char,struct std::char_traits<char> >::sputc | C:\Windows\SysWOW64\msvcp140d.dll | 200576
+       142 |       141 |    154188 |    0 |      1 |                         func@0x10025960 | C:\Windows\SysWOW64\msvcp140d.dll | 153952
+       143 |       142 |    111794 |    0 |      1 |                         func@0x1001b4a0 | C:\Windows\SysWOW64\msvcp140d.dll | 111776
+       144 |       143 |    764467 |    0 |      1 |                                   fputc | C:\Windows\SysWOW64\ucrtbased.dll | 763952
+       145 |       144 |    763806 |    0 |      1 |                            fputc_nolock | C:\Windows\SysWOW64\ucrtbased.dll | 763728
+       146 |       145 |    962397 |    0 |      1 |                         func@0x100eaf40 | C:\Windows\SysWOW64\ucrtbased.dll | 962368
+       147 |       146 |    960969 |    0 |      1 |                         func@0x100ea810 | C:\Windows\SysWOW64\ucrtbased.dll | 960528
+       148 |       147 |    961901 |    0 |      1 |                         func@0x100eabe0 | C:\Windows\SysWOW64\ucrtbased.dll | 961504
+       149 |       148 |    694700 |    0 |      1 |                                   write | C:\Windows\SysWOW64\ucrtbased.dll | 694176
+       150 |       149 |    695479 |    0 |      1 |                         func@0x100a99f0 | C:\Windows\SysWOW64\ucrtbased.dll | 694768
+       151 |       680 |    692822 |    1 |      1 |    [Loop@0x100a9166 in func@0x100a9100] | C:\Windows\SysWOW64\ucrtbased.dll | 692582
+       152 |       151 |    952158 |    0 |      1 |                               WriteFile | C:\Windows\SysWOW64\KernelBase.dll | 952048
+       153 |       152 |    466300 |    0 |      1 |                             NtWriteFile | C:\Windows\SysWOW64\ntdll.dll | 466288
+       154 |       687 |    118986 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       155 |       154 |     62032 |    0 |      0 |                           Window::clear | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 61846
+       156 |       155 |    768780 |    0 |      1 |                         func@0x100bb950 | C:\Windows\SysWOW64\ig75icd32.dll | 768336
+       157 |       156 |   1448599 |    0 |      1 |                         func@0x10161a90 | C:\Windows\SysWOW64\ig75icd32.dll | 1448592
+       158 |       723 |   2966705 |    1 |      1 |    [Loop@0x102d44b1 in func@0x102d4490] | C:\Windows\SysWOW64\ig75icd32.dll | 2966705
+       159 |       687 |    119784 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       160 |       159 |     19625 |    0 |      0 |                              Mesh::Draw | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 19506
+       161 |       160 |   1419946 |    0 |      1 |                         func@0x1015aa80 | C:\Windows\SysWOW64\ig75icd32.dll | 1419904
+       162 |       161 |   1419204 |    0 |      1 |                         func@0x1015a680 | C:\Windows\SysWOW64\ig75icd32.dll | 1418880
+       163 |       162 |   1418868 |    0 |      1 |                         func@0x1015a480 | C:\Windows\SysWOW64\ig75icd32.dll | 1418368
+       164 |       163 |   1412893 |    0 |      1 |                         func@0x10158e40 | C:\Windows\SysWOW64\ig75icd32.dll | 1412672
+       165 |       164 |   2573845 |    0 |      1 |                         func@0x10274580 | C:\Windows\SysWOW64\ig75icd32.dll | 2573696
+       166 |       165 |   2574352 |    0 |      1 |                         func@0x102747f0 | C:\Windows\SysWOW64\ig75icd32.dll | 2574320
+       167 |       166 |   2575004 |    0 |      1 |                         func@0x102749e0 | C:\Windows\SysWOW64\ig75icd32.dll | 2574816
+       168 |       167 |   2109871 |    0 |      1 |                         func@0x10202fbd | C:\Windows\SysWOW64\ig75icd32.dll | 2109373
+       169 |       168 |   2013018 |    0 |      1 |                         func@0x101eb6b0 | C:\Windows\SysWOW64\ig75icd32.dll | 2012848
+       170 |        87 |    134677 |    0 |      1 |                         func@0x69220df1 | C:\Windows\SysWOW64\opengl32.dll | 134641
+       171 |       170 |    127031 |    0 |      1 |                         func@0x6921f021 | C:\Windows\SysWOW64\opengl32.dll | 127009
+       172 |       171 |    117009 |    0 |      1 |                         func@0x6921c8a3 | C:\Windows\SysWOW64\opengl32.dll | 116899
+       173 |       172 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       174 |       173 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       175 |        79 |    694718 |    0 |      1 |                                   write | C:\Windows\SysWOW64\ucrtbased.dll | 694176
+       176 |       175 |    694729 |    0 |      1 |                         func@0x100a99c1 | C:\Windows\SysWOW64\ucrtbased.dll | 694721
+       177 |       176 |    681283 |    0 |      1 |                         func@0x100a6520 | C:\Windows\SysWOW64\ucrtbased.dll | 681248
+       178 |       177 |    307807 |    0 |      1 |                 RtlLeaveCriticalSection | C:\Windows\SysWOW64\ntdll.dll | 307792
+       179 |        97 |    132410 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+       180 |       179 |    127031 |    0 |      1 |                         func@0x6921f021 | C:\Windows\SysWOW64\opengl32.dll | 127009
+       181 |       180 |    117009 |    0 |      1 |                         func@0x6921c8a3 | C:\Windows\SysWOW64\opengl32.dll | 116899
+       182 |       181 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       183 |       182 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       184 |        61 |     62316 |    0 |      0 |                          Window::update | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 62266
+       185 |       184 |    228527 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       186 |       185 |    134535 |    0 |      1 |                         GetActiveWindow | C:\Windows\SysWOW64\user32.dll | 134528
+       187 |       186 |     10492 |    0 |      1 |                    NtUserGetThreadState | C:\Windows\SysWOW64\win32u.dll | 10480
+       188 |       161 |   1419106 |    0 |      1 |                         func@0x1015a680 | C:\Windows\SysWOW64\ig75icd32.dll | 1418880
+       189 |       188 |   1414089 |    0 |      1 |                         func@0x101590b0 | C:\Windows\SysWOW64\ig75icd32.dll | 1413296
+       190 |       189 |   2978769 |    0 |      1 |                         func@0x102d73a0 | C:\Windows\SysWOW64\ig75icd32.dll | 2978720
+       191 |       190 |    808335 |    0 |      1 |                         func@0x100c5570 | C:\Windows\SysWOW64\ig75icd32.dll | 808304
+       192 |       191 |   4397275 |    0 |      1 |                         func@0x104318d0 | C:\Windows\SysWOW64\ig75icd32.dll | 4397264
+       193 |       192 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       194 |       193 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       195 |        66 |   1646987 |    0 |      1 |                         func@0x55191f86 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1646470
+       196 |       195 |   1647040 |    0 |      1 |                         func@0x551921a6 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1647014
+       197 |       196 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       198 |       197 |   2020513 |    0 |      1 |                         func@0x551ed430 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2020400
+       199 |       748 |   2023729 |    1 |      1 |    [Loop@0x551ee053 in func@0x551ee040] | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023507
+       200 |       199 |    838261 |    0 |      1 |                          SwitchToThread | C:\Windows\SysWOW64\KernelBase.dll | 838256
+       201 |       200 |    467324 |    0 |      1 |                        NtYieldExecution | C:\Windows\SysWOW64\ntdll.dll | 467312
+       202 |        97 |    132740 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+       203 |       202 |   4346942 |    0 |      1 |                       DrvPresentBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4346784
+       204 |       203 |   4429080 |    0 |      1 |                         func@0x104394f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4429040
+       205 |       204 |   4430160 |    0 |      1 |                         func@0x10439890 | C:\Windows\SysWOW64\ig75icd32.dll | 4429968
+       206 |       205 |   1791438 |    0 |      1 |                         func@0x101b5320 | C:\Windows\SysWOW64\ig75icd32.dll | 1790752
+       207 |       206 |   1520122 |    0 |      1 |                         func@0x10172e50 | C:\Windows\SysWOW64\ig75icd32.dll | 1519184
+       208 |        98 |     60793 |    0 |      1 |         DwmpDxUpdateWindowSharedSurface | C:\Windows\SysWOW64\dwmapi.dll | 60560
+       209 |       208 |    461291 |    0 |      1 |                                ORD_1554 | C:\Windows\SysWOW64\user32.dll | 461232
+       210 |       209 |     25740 |    0 |      1 |            NtUserHwndSetRedirectionInfo | C:\Windows\SysWOW64\win32u.dll | 25728
+       211 |       165 |   2575004 |    0 |      1 |                         func@0x102749e0 | C:\Windows\SysWOW64\ig75icd32.dll | 2574816
+       212 |       211 |   2114320 |    0 |      1 |                         func@0x10202fbd | C:\Windows\SysWOW64\ig75icd32.dll | 2109373
+       213 |       212 |   1519171 |    0 |      1 |                         func@0x10172c40 | C:\Windows\SysWOW64\ig75icd32.dll | 1518656
+       214 |        61 |    228543 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       215 |       214 |    160736 |    0 |      1 |                                GetPropW | C:\Windows\SysWOW64\user32.dll | 160624
+       216 |       215 |    271678 |    0 |      1 |                         func@0x6b842437 | C:\Windows\SysWOW64\kernel32.dll | 271415
+       217 |       216 |    466492 |    0 |      1 |                              NtFindAtom | C:\Windows\SysWOW64\ntdll.dll | 466480
+       218 |       189 |   2979053 |    0 |      1 |                         func@0x102d73a0 | C:\Windows\SysWOW64\ig75icd32.dll | 2978720
+       219 |       218 |   2970923 |    0 |      1 |                         func@0x102d5510 | C:\Windows\SysWOW64\ig75icd32.dll | 2970896
+       220 |       219 |   2969184 |    0 |      1 |                         func@0x102d4e60 | C:\Windows\SysWOW64\ig75icd32.dll | 2969184
+       221 |        87 |    134670 |    0 |      1 |                         func@0x69220df1 | C:\Windows\SysWOW64\opengl32.dll | 134641
+       222 |       221 |    792391 |    0 |      1 |                         func@0x100c1726 | C:\Windows\SysWOW64\gdi32full.dll | 792358
+       223 |       222 |    181861 |    0 |      1 |                       wglGetPixelFormat | C:\Windows\SysWOW64\opengl32.dll | 181840
+       224 |       223 |    117009 |    0 |      1 |                         func@0x6921c8a3 | C:\Windows\SysWOW64\opengl32.dll | 116899
+       225 |       224 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       226 |       225 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       227 |       205 |   1791541 |    0 |      1 |                         func@0x101b5320 | C:\Windows\SysWOW64\ig75icd32.dll | 1790752
+       228 |       227 |    403018 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+       229 |       228 |    457007 |    0 |      1 |                         func@0x1006f680 | C:\Windows\SysWOW64\ig75icd32.dll | 456320
+       230 |       229 |   4367297 |    0 |      1 |                         func@0x1042a3a0 | C:\Windows\SysWOW64\ig75icd32.dll | 4367264
+       231 |       230 |   4369065 |    0 |      1 |                         func@0x1042a950 | C:\Windows\SysWOW64\ig75icd32.dll | 4368720
+       232 |       231 |   4439524 |    0 |      1 |                         func@0x1043bdcf | C:\Windows\SysWOW64\ig75icd32.dll | 4439503
+       233 |       232 |     18988 |    0 |      1 |                 NtGdiDdDDISubmitCommand | C:\Windows\SysWOW64\win32u.dll | 18976
+       234 |        97 |    132403 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+       235 |       234 |    792391 |    0 |      1 |                         func@0x100c1726 | C:\Windows\SysWOW64\gdi32full.dll | 792358
+       236 |       235 |    181861 |    0 |      1 |                       wglGetPixelFormat | C:\Windows\SysWOW64\opengl32.dll | 181840
+       237 |       236 |    117009 |    0 |      1 |                         func@0x6921c8a3 | C:\Windows\SysWOW64\opengl32.dll | 116899
+       238 |       237 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       239 |       238 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       240 |       154 |     62047 |    0 |      0 |                           Window::clear | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 61846
+       241 |       240 |   3103847 |    0 |      1 |                         func@0x102f5a60 | C:\Windows\SysWOW64\ig75icd32.dll | 3103328
+       242 |       241 |   3776007 |    0 |      1 |                         func@0x10399db0 | C:\Windows\SysWOW64\ig75icd32.dll | 3775920
+       243 |       725 |   3496644 |    1 |      1 |    [Loop@0x10355a30 in func@0x10355990] | C:\Windows\SysWOW64\ig75icd32.dll | 3496496
+       244 |       243 |   3470475 |    0 |      1 |                         func@0x1034f430 | C:\Windows\SysWOW64\ig75icd32.dll | 3470384
+       245 |       244 |   1422609 |    0 |      1 |                         func@0x1015b3ff | C:\Windows\SysWOW64\ig75icd32.dll | 1422335
+       246 |       245 |   3778282 |    0 |      1 |                         func@0x1039a31f | C:\Windows\SysWOW64\ig75icd32.dll | 3777311
+       247 |       246 |   1404848 |    0 |      1 |                         func@0x10156fb0 | C:\Windows\SysWOW64\ig75icd32.dll | 1404848
+       248 |       154 |     62112 |    0 |      0 |                           Window::clear | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 61846
+       249 |       248 |    255167 |    0 |      0 |                      RTC_CheckStackVars | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 255152
+       250 |       241 |   3776063 |    0 |      1 |                         func@0x10399db0 | C:\Windows\SysWOW64\ig75icd32.dll | 3775920
+       251 |       250 |   3497455 |    0 |      1 |                         func@0x10355d50 | C:\Windows\SysWOW64\ig75icd32.dll | 3497296
+       252 |       251 |   3470475 |    0 |      1 |                         func@0x1034f430 | C:\Windows\SysWOW64\ig75icd32.dll | 3470384
+       253 |       252 |   1422609 |    0 |      1 |                         func@0x1015b3ff | C:\Windows\SysWOW64\ig75icd32.dll | 1422335
+       254 |       253 |   3795808 |    0 |      1 |                         func@0x1039e978 | C:\Windows\SysWOW64\ig75icd32.dll | 3795320
+       255 |       254 |   3449381 |    0 |      1 |                         func@0x1034a15f | C:\Windows\SysWOW64\ig75icd32.dll | 3449183
+       256 |       255 |   3506950 |    0 |      1 |                         func@0x10358190 | C:\Windows\SysWOW64\ig75icd32.dll | 3506576
+       257 |       256 |   3507392 |    0 |      1 |                         func@0x10358310 | C:\Windows\SysWOW64\ig75icd32.dll | 3506960
+       258 |       257 |   3520794 |    0 |      1 |                         func@0x1035b840 | C:\Windows\SysWOW64\ig75icd32.dll | 3520576
+       259 |       123 |   1646961 |    0 |      1 |                         func@0x55191f86 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1646470
+       260 |       259 |    466748 |    0 |      1 |                  NtRequestWaitReplyPort | C:\Windows\SysWOW64\ntdll.dll | 466736
+       261 |        97 |    132423 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+       262 |       261 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       263 |       262 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       264 |       184 |    228543 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       265 |       264 |    160712 |    0 |      1 |                                GetPropW | C:\Windows\SysWOW64\user32.dll | 160624
+       266 |       265 |     10716 |    0 |      1 |                           NtUserGetProp | C:\Windows\SysWOW64\win32u.dll | 10704
+       267 |        88 |   4348886 |    0 |      1 |                          DrvSwapBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4348528
+       268 |       267 |     27004 |    0 |      1 |                 DwmIsCompositionEnabled | C:\Windows\SysWOW64\dwmapi.dll | 26928
+       269 |       268 |    195351 |    0 |      1 |                   SystemParametersInfoW | C:\Windows\SysWOW64\user32.dll | 195168
+       270 |       269 |    202457 |    0 |      1 |                         func@0x71b31620 | C:\Windows\SysWOW64\uxtheme.dll | 202272
+       271 |       270 |    195578 |    0 |      1 |                         func@0x6baafbb0 | C:\Windows\SysWOW64\user32.dll | 195504
+       272 |       271 |     11548 |    0 |      1 |              NtUserSystemParametersInfo | C:\Windows\SysWOW64\win32u.dll | 11536
+       273 |        89 |    808129 |    0 |      1 |                         func@0x100c5460 | C:\Windows\SysWOW64\ig75icd32.dll | 808032
+       274 |       273 |   1396322 |    0 |      1 |                         func@0x10154e50 | C:\Windows\SysWOW64\ig75icd32.dll | 1396304
+       275 |       100 |     76801 |    0 |      1 |                         func@0x10012bc0 | C:\Windows\SysWOW64\dwmapi.dll | 76736
+       276 |       275 |    273917 |    0 |      1 |                         RtlAllocateHeap | C:\Windows\SysWOW64\ntdll.dll | 273856
+       277 |       276 |    274153 |    0 |      1 |                         func@0x4b2c2e12 | C:\Windows\SysWOW64\ntdll.dll | 273938
+       278 |       706 |    274787 |    1 |      1 |    [Loop@0x4b2c30b1 in func@0x4b2c3020] | C:\Windows\SysWOW64\ntdll.dll | 274609
+       279 |        66 |    466736 |    0 |      1 |                  NtRequestWaitReplyPort | C:\Windows\SysWOW64\ntdll.dll | 466736
+       280 |       123 |   1645997 |    0 |      1 |                         func@0x55191d00 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1645824
+       281 |       280 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       282 |       281 |    549248 |    0 |      1 |                         func@0x4b306180 | C:\Windows\SysWOW64\ntdll.dll | 549248
+       283 |        77 |    960874 |    0 |      1 |                         func@0x100ea810 | C:\Windows\SysWOW64\ucrtbased.dll | 960528
+       284 |       283 |    960064 |    0 |      1 |                          _acrt_iob_func | C:\Windows\SysWOW64\ucrtbased.dll | 960064
+       285 |        62 |         0 |    0 |      0 |                [Unknown stack frame(s)] | n/a | 0
+       286 |       285 |   2020513 |    0 |      1 |                         func@0x551ed430 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2020400
+       287 |       750 |   2023729 |    1 |      1 |    [Loop@0x551ee053 in func@0x551ee040] | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023507
+       288 |       287 |    838261 |    0 |      1 |                          SwitchToThread | C:\Windows\SysWOW64\KernelBase.dll | 838256
+       289 |       288 |    467324 |    0 |      1 |                        NtYieldExecution | C:\Windows\SysWOW64\ntdll.dll | 467312
+       290 |        72 |    154947 |    0 |      1 |                         func@0x10025960 | C:\Windows\SysWOW64\msvcp140d.dll | 153952
+       291 |       206 |   1527810 |    0 |      1 |                         func@0x1017459e | C:\Windows\SysWOW64\ig75icd32.dll | 1525150
+       292 |       291 |   1674488 |    0 |      1 |                         func@0x10198640 | C:\Windows\SysWOW64\ig75icd32.dll | 1672768
+       293 |       292 |   4392966 |    0 |      1 |                         func@0x104303c0 | C:\Windows\SysWOW64\ig75icd32.dll | 4391872
+       294 |       293 |    307920 |    0 |      1 |                 RtlEnterCriticalSection | C:\Windows\SysWOW64\ntdll.dll | 307920
+       295 |       211 |   2137175 |    0 |      1 |                         func@0x10209a77 | C:\Windows\SysWOW64\ig75icd32.dll | 2136695
+       296 |       295 |   4374330 |    0 |      1 |                         func@0x1042beb0 | C:\Windows\SysWOW64\ig75icd32.dll | 4374192
+       297 |       256 |   3507282 |    0 |      1 |                         func@0x10358310 | C:\Windows\SysWOW64\ig75icd32.dll | 3506960
+       298 |       297 |   3532528 |    0 |      1 |                         func@0x1035dfb0 | C:\Windows\SysWOW64\ig75icd32.dll | 3530672
+       299 |       298 |   3528933 |    0 |      1 |                         func@0x1035d8a0 | C:\Windows\SysWOW64\ig75icd32.dll | 3528864
+       300 |        77 |    960914 |    0 |      1 |                         func@0x100ea810 | C:\Windows\SysWOW64\ucrtbased.dll | 960528
+       301 |       300 |    666178 |    0 |      1 |                                  isatty | C:\Windows\SysWOW64\ucrtbased.dll | 666176
+       302 |        86 |    185633 |    0 |      1 |                          wglSwapBuffers | C:\Windows\SysWOW64\opengl32.dll | 185552
+       303 |       302 |    117009 |    0 |      1 |                         func@0x6921c8a3 | C:\Windows\SysWOW64\opengl32.dll | 116899
+       304 |       303 |    139615 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       305 |       304 |     10524 |    0 |      1 |                      NtUserCallOneParam | C:\Windows\SysWOW64\win32u.dll | 10512
+       306 |       227 |    403066 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+       307 |       306 |    388658 |    0 |      1 |                         func@0x1005d590 | C:\Windows\SysWOW64\ig75icd32.dll | 382352
+       308 |        97 |    132438 |    0 |      1 |                         func@0x692204f0 | C:\Windows\SysWOW64\opengl32.dll | 132336
+       309 |       308 |    117009 |    0 |      1 |                         func@0x6921c8a3 | C:\Windows\SysWOW64\opengl32.dll | 116899
+       310 |       309 |    139617 |    0 |      1 |                            WindowFromDC | C:\Windows\SysWOW64\user32.dll | 139600
+       311 |        69 |     66168 |    0 |      0 |                         std::operator<< | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 65676
+       312 |       311 |     64685 |    0 |      0 |std::basic_ostream<char,struct std::char_traits<char> >::sentry::sentry | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 64656
+       313 |       128 |   4428557 |    0 |      1 |                         func@0x10439290 | C:\Windows\SysWOW64\ig75icd32.dll | 4428432
+       314 |       313 |     79841 |    0 |      1 |                      AdjustWindowRectEx | C:\Windows\SysWOW64\user32.dll | 79792
+       315 |       314 |     79933 |    0 |      1 |                         func@0x6ba937e6 | C:\Windows\SysWOW64\user32.dll | 79846
+       316 |       315 |     80011 |    0 |      1 |                         func@0x6ba93870 | C:\Windows\SysWOW64\user32.dll | 79984
+       317 |       316 |    163360 |    0 |      1 |                      GetAppCompatFlags2 | C:\Windows\SysWOW64\user32.dll | 163360
+       318 |       254 |   3449334 |    0 |      1 |                         func@0x1034a15f | C:\Windows\SysWOW64\ig75icd32.dll | 3449183
+       319 |       318 |   1926232 |    0 |      1 |                         func@0x101d63c4 | C:\Windows\SysWOW64\ig75icd32.dll | 1926084
+       320 |       319 |   1369755 |    0 |      1 |                         func@0x1014e61f | C:\Windows\SysWOW64\ig75icd32.dll | 1369631
+       321 |       320 |   1376614 |    0 |      1 |                         func@0x10150110 | C:\Windows\SysWOW64\ig75icd32.dll | 1376528
+       322 |       321 |   1376160 |    0 |      1 |                         func@0x1014ffa0 | C:\Windows\SysWOW64\ig75icd32.dll | 1376160
+       323 |       227 |    402815 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+       324 |       184 |    228554 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       325 |       324 |    235085 |    0 |      0 |                           func@0x439640 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 235072
+       326 |       325 |    115000 |    0 |      1 |                        GetAsyncKeyState | C:\Windows\SysWOW64\user32.dll | 114816
+       327 |       326 |     11580 |    0 |      1 |                  NtUserGetAsyncKeyState | C:\Windows\SysWOW64\win32u.dll | 11568
+       328 |        92 |    403207 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+       329 |       328 |    380855 |    0 |      1 |                         func@0x1005cd00 | C:\Windows\SysWOW64\ig75icd32.dll | 380160
+       330 |       329 |   4582244 |    0 |      1 |                         func@0x1045eb40 | C:\Windows\SysWOW64\ig75icd32.dll | 4582208
+       331 |        85 |    937632 |    0 |      1 |                             SwapBuffers | C:\Windows\SysWOW64\gdi32full.dll | 937600
+       332 |       331 |    937395 |    0 |      1 |                         func@0x100e4d8c | C:\Windows\SysWOW64\gdi32full.dll | 937356
+       333 |       332 |    965280 |    0 |      1 |                          GetProcAddress | C:\Windows\SysWOW64\KernelBase.dll | 965280
+       334 |       221 |    792413 |    0 |      1 |                         func@0x100c1726 | C:\Windows\SysWOW64\gdi32full.dll | 792358
+       335 |       334 |    957648 |    0 |      1 |                             FreeLibrary | C:\Windows\SysWOW64\KernelBase.dll | 957648
+       336 |       128 |   4428454 |    0 |      1 |                         func@0x10439290 | C:\Windows\SysWOW64\ig75icd32.dll | 4428432
+       337 |       336 |    163888 |    0 |      1 |                                IsWindow | C:\Windows\SysWOW64\user32.dll | 163760
+       338 |        62 |    249444 |    0 |      0 |                           func@0x43ce50 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 249424
+       339 |       338 |     27004 |    0 |      1 |                 DwmIsCompositionEnabled | C:\Windows\SysWOW64\dwmapi.dll | 26928
+       340 |       339 |    195351 |    0 |      1 |                   SystemParametersInfoW | C:\Windows\SysWOW64\user32.dll | 195168
+       341 |       340 |    202457 |    0 |      1 |                         func@0x71b31620 | C:\Windows\SysWOW64\uxtheme.dll | 202272
+       342 |       341 |    195578 |    0 |      1 |                         func@0x6baafbb0 | C:\Windows\SysWOW64\user32.dll | 195504
+       343 |       342 |     11548 |    0 |      1 |              NtUserSystemParametersInfo | C:\Windows\SysWOW64\win32u.dll | 11536
+       344 |        92 |    403018 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+       345 |       344 |    457007 |    0 |      1 |                         func@0x1006f680 | C:\Windows\SysWOW64\ig75icd32.dll | 456320
+       346 |       345 |   4367297 |    0 |      1 |                         func@0x1042a3a0 | C:\Windows\SysWOW64\ig75icd32.dll | 4367264
+       347 |       346 |   4369198 |    0 |      1 |                         func@0x1042a950 | C:\Windows\SysWOW64\ig75icd32.dll | 4368720
+       348 |       347 |   4377282 |    0 |      1 |                         func@0x1042ca80 | C:\Windows\SysWOW64\ig75icd32.dll | 4377216
+       349 |       348 |   4373108 |    0 |      1 |                         func@0x1042b8f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4372720
+       350 |       349 |   4377155 |    0 |      1 |                         func@0x1042ca10 | C:\Windows\SysWOW64\ig75icd32.dll | 4377104
+       351 |       350 |   4376670 |    0 |      1 |                         func@0x1042c6f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4376304
+       352 |       727 |   4374396 |    1 |      1 |    [Loop@0x1042bf72 in func@0x1042beb0] | C:\Windows\SysWOW64\ig75icd32.dll | 4374386
+       353 |       352 |   4382384 |    0 |      1 |                         func@0x1042deb0 | C:\Windows\SysWOW64\ig75icd32.dll | 4382384
+       354 |       332 |   1029851 |    0 |      1 |                         func@0x550fb630 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1029680
+       355 |       354 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       356 |       355 |   2020513 |    0 |      1 |                         func@0x551ed430 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2020400
+       357 |       752 |   2023729 |    1 |      1 |    [Loop@0x551ee053 in func@0x551ee040] | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023507
+       358 |       357 |    838261 |    0 |      1 |                          SwitchToThread | C:\Windows\SysWOW64\KernelBase.dll | 838256
+       359 |       358 |    467324 |    0 |      1 |                        NtYieldExecution | C:\Windows\SysWOW64\ntdll.dll | 467312
+       360 |       346 |   4369211 |    0 |      1 |                         func@0x1042a950 | C:\Windows\SysWOW64\ig75icd32.dll | 4368720
+       361 |       729 |   4398568 |    1 |      1 |    [Loop@0x10431d42 in func@0x10431cd0] | C:\Windows\SysWOW64\ig75icd32.dll | 4398402
+       362 |       361 |   4398050 |    0 |      1 |                         func@0x10431b90 | C:\Windows\SysWOW64\ig75icd32.dll | 4397968
+       363 |       362 |   4382605 |    0 |      1 |                         func@0x1042df80 | C:\Windows\SysWOW64\ig75icd32.dll | 4382592
+       364 |       363 |   4383657 |    0 |      1 |                         func@0x1042e3a0 | C:\Windows\SysWOW64\ig75icd32.dll | 4383648
+       365 |       731 |     30970 |    1 |      1 |    [Loop@0x100078e6 in func@0x100078e0] | C:\Windows\SysWOW64\ig75icd32.dll | 30950
+       366 |       733 |   4443317 |    1 |      1 |    [Loop@0x1043cc7b in func@0x1043cc6d] | C:\Windows\SysWOW64\ig75icd32.dll | 4443259
+       367 |       366 |    273917 |    0 |      1 |                         RtlAllocateHeap | C:\Windows\SysWOW64\ntdll.dll | 273856
+       368 |       367 |    274153 |    0 |      1 |                         func@0x4b2c2e12 | C:\Windows\SysWOW64\ntdll.dll | 273938
+       369 |       709 |    274940 |    1 |      1 |    [Loop@0x4b2c30b1 in func@0x4b2c3020] | C:\Windows\SysWOW64\ntdll.dll | 274609
+       370 |       346 |   4369065 |    0 |      1 |                         func@0x1042a950 | C:\Windows\SysWOW64\ig75icd32.dll | 4368720
+       371 |       370 |   4439524 |    0 |      1 |                         func@0x1043bdcf | C:\Windows\SysWOW64\ig75icd32.dll | 4439503
+       372 |       371 |     18988 |    0 |      1 |                 NtGdiDdDDISubmitCommand | C:\Windows\SysWOW64\win32u.dll | 18976
+       373 |       687 |    118987 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       374 |       344 |    457137 |    0 |      1 |                         func@0x1006f680 | C:\Windows\SysWOW64\ig75icd32.dll | 456320
+       375 |       374 |    455959 |    0 |      1 |                         func@0x1006f500 | C:\Windows\SysWOW64\ig75icd32.dll | 455936
+       376 |       697 |    228502 |    1 |      0 |[Loop@0x437c67 in _glfwPlatformPollEvents] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228455
+       377 |       376 |    151535 |    0 |      1 |                        DispatchMessageW | C:\Windows\SysWOW64\user32.dll | 151520
+       378 |       377 |    152457 |    0 |      1 |                         func@0x6baa5000 | C:\Windows\SysWOW64\user32.dll | 151552
+       379 |       378 |     11356 |    0 |      1 |                   NtUserDispatchMessage | C:\Windows\SysWOW64\win32u.dll | 11344
+       380 |        80 |    695212 |    0 |      1 |                         func@0x100a99f0 | C:\Windows\SysWOW64\ucrtbased.dll | 694768
+       381 |       380 |    692333 |    0 |      1 |                         func@0x100a9022 | C:\Windows\SysWOW64\ucrtbased.dll | 692258
+       382 |       381 |    614346 |    0 |      1 |                         func@0x10095fc0 | C:\Windows\SysWOW64\ucrtbased.dll | 614336
+       383 |       382 |    614020 |    0 |      1 |                         func@0x10095e72 | C:\Windows\SysWOW64\ucrtbased.dll | 614002
+       384 |       383 |    613756 |    0 |      1 |                         func@0x10095d70 | C:\Windows\SysWOW64\ucrtbased.dll | 613744
+       385 |       384 |    614253 |    0 |      1 |                         func@0x10095f50 | C:\Windows\SysWOW64\ucrtbased.dll | 614224
+       386 |       385 |    620277 |    0 |      1 |                         func@0x100976c0 | C:\Windows\SysWOW64\ucrtbased.dll | 620224
+       387 |       386 |    951437 |    0 |      1 |                             FlsGetValue | C:\Windows\SysWOW64\KernelBase.dll | 951392
+       388 |       349 |   4377171 |    0 |      1 |                         func@0x1042ca10 | C:\Windows\SysWOW64\ig75icd32.dll | 4377104
+       389 |       388 |   4397776 |    0 |      1 |                         func@0x10431ad0 | C:\Windows\SysWOW64\ig75icd32.dll | 4397776
+       390 |       221 |    792372 |    0 |      1 |                         func@0x100c1726 | C:\Windows\SysWOW64\gdi32full.dll | 792358
+       391 |       390 |    937395 |    0 |      1 |                         func@0x100e4d8c | C:\Windows\SysWOW64\gdi32full.dll | 937356
+       392 |       391 |    965280 |    0 |      1 |                          GetProcAddress | C:\Windows\SysWOW64\KernelBase.dll | 965280
+       393 |       390 |    937378 |    0 |      1 |                         func@0x100e4d8c | C:\Windows\SysWOW64\gdi32full.dll | 937356
+       394 |       393 |    947205 |    0 |      1 |                          LoadLibraryExA | C:\Windows\SysWOW64\KernelBase.dll | 947168
+       395 |       394 |    643699 |    0 |      1 |                         func@0x5509d190 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 643472
+       396 |       395 |    180912 |    0 |      1 |                         func@0x5502c290 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 180880
+       397 |       396 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       398 |       397 |   2020513 |    0 |      1 |                         func@0x551ed430 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2020400
+       399 |       754 |   2023729 |    1 |      1 |    [Loop@0x551ee053 in func@0x551ee040] | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023507
+       400 |       399 |    838256 |    0 |      1 |                          SwitchToThread | C:\Windows\SysWOW64\KernelBase.dll | 838256
+       401 |       122 |     39150 |    0 |      1 |                         func@0x100098ee | C:\Windows\SysWOW64\dwmapi.dll | 39150
+       402 |       184 |    228438 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       403 |       402 |    187004 |    0 |      1 |                            PeekMessageW | C:\Windows\SysWOW64\user32.dll | 186672
+       404 |       403 |    475420 |    0 |      1 |                KiUserCallbackDispatcher | C:\Windows\SysWOW64\ntdll.dll | 475344
+       405 |       404 |    198194 |    0 |      1 |                         func@0x6bab05f0 | C:\Windows\SysWOW64\user32.dll | 198128
+       406 |       670 |    184440 |    1 |      1 |    [Loop@0x1002cf20 in func@0x1002ce92] | C:\Windows\SysWOW64\msctf.dll | 184096
+       407 |       406 |    371876 |    0 |      1 |                         func@0x1005ac8e | C:\Windows\SysWOW64\msctf.dll | 371854
+       408 |       407 |    342708 |    0 |      1 |                         func@0x10053a8d | C:\Windows\SysWOW64\msctf.dll | 342669
+       409 |       408 |    301903 |    0 |      1 |                LdrResolveDelayLoadedAPI | C:\Windows\SysWOW64\ntdll.dll | 301600
+       410 |       409 |    305100 |    0 |      1 |                         func@0x4b2ca750 | C:\Windows\SysWOW64\ntdll.dll | 304976
+       411 |       410 |    234207 |    0 |      1 |                         func@0x4b2b9260 | C:\Windows\SysWOW64\ntdll.dll | 234080
+       412 |       411 |    237977 |    0 |      1 |                         func@0x4b2ba08c | C:\Windows\SysWOW64\ntdll.dll | 237708
+       413 |       412 |    248013 |    0 |      1 |                         func@0x4b2bc7e8 | C:\Windows\SysWOW64\ntdll.dll | 247784
+       414 |       711 |    318340 |    1 |      1 |    [Loop@0x4b2cda69 in func@0x4b2cda48] | C:\Windows\SysWOW64\ntdll.dll | 318057
+       415 |       414 |    247421 |    0 |      1 |                         func@0x4b2bc5ed | C:\Windows\SysWOW64\ntdll.dll | 247277
+       416 |       415 |    346903 |    0 |      1 |                         func@0x4b2d4980 | C:\Windows\SysWOW64\ntdll.dll | 346496
+       417 |       416 |    348583 |    0 |      1 |                         func@0x4b2d507e | C:\Windows\SysWOW64\ntdll.dll | 348286
+       418 |       417 |    233573 |    0 |      1 |                         func@0x4b2b8f19 | C:\Windows\SysWOW64\ntdll.dll | 233241
+       419 |       713 |    254979 |    1 |      1 |    [Loop@0x4b2be3a0 in func@0x4b2be280] | C:\Windows\SysWOW64\ntdll.dll | 254880
+       420 |       419 |    255731 |    0 |      1 |                         func@0x4b2be4b0 | C:\Windows\SysWOW64\ntdll.dll | 255152
+       421 |       420 |    413890 |    0 |      1 |                         func@0x4b2e5056 | C:\Windows\SysWOW64\ntdll.dll | 413782
+       422 |       421 |    328349 |    0 |      1 |                         func@0x4b2d0243 | C:\Windows\SysWOW64\ntdll.dll | 328259
+       423 |       422 |    330046 |    0 |      1 |                         func@0x4b2d08e3 | C:\Windows\SysWOW64\ntdll.dll | 329955
+       424 |       423 |    467084 |    0 |      1 |                           NtOpenSection | C:\Windows\SysWOW64\ntdll.dll | 467072
+       425 |       403 |    187110 |    0 |      1 |                         func@0x6baadac0 | C:\Windows\SysWOW64\user32.dll | 187072
+       426 |       425 |     10508 |    0 |      1 |                       NtUserPeekMessage | C:\Windows\SysWOW64\win32u.dll | 10496
+       427 |       205 |   1791065 |    0 |      1 |                         func@0x101b5320 | C:\Windows\SysWOW64\ig75icd32.dll | 1790752
+       428 |       427 |   1791739 |    0 |      1 |                         func@0x101b5680 | C:\Windows\SysWOW64\ig75icd32.dll | 1791616
+       429 |       360 |   4398575 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       430 |       736 |   4398935 |    1 |      1 |    [Loop@0x10431f51 in func@0x10431e10] | C:\Windows\SysWOW64\ig75icd32.dll | 4398929
+       431 |       382 |    614081 |    0 |      1 |                         func@0x10095e72 | C:\Windows\SysWOW64\ucrtbased.dll | 614002
+       432 |       431 |    374312 |    0 |      1 |                         func@0x1005b621 | C:\Windows\SysWOW64\ucrtbased.dll | 374305
+       433 |       432 |    349904 |    0 |      1 |                RtlRestoreLastWin32Error | C:\Windows\SysWOW64\ntdll.dll | 349888
+       434 |       234 |    792372 |    0 |      1 |                         func@0x100c1726 | C:\Windows\SysWOW64\gdi32full.dll | 792358
+       435 |       434 |    937395 |    0 |      1 |                         func@0x100e4d8c | C:\Windows\SysWOW64\gdi32full.dll | 937356
+       436 |       435 |    965280 |    0 |      1 |                          GetProcAddress | C:\Windows\SysWOW64\KernelBase.dll | 965280
+       437 |       227 |    402886 |    0 |      1 |                         func@0x1006252f | C:\Windows\SysWOW64\ig75icd32.dll | 402735
+       438 |       437 |     58979 |    0 |      1 |                         func@0x1000e650 | C:\Windows\SysWOW64\ig75icd32.dll | 58960
+       439 |       438 |   4446028 |    0 |      1 |                         func@0x1043d71f | C:\Windows\SysWOW64\ig75icd32.dll | 4445983
+       440 |       404 |    193720 |    0 |      1 |                         func@0x6baaf470 | C:\Windows\SysWOW64\user32.dll | 193648
+       441 |       440 |    152809 |    0 |      1 |                         func@0x6baa5400 | C:\Windows\SysWOW64\user32.dll | 152576
+       442 |       441 |    153746 |    0 |      1 |                         func@0x6baa55c0 | C:\Windows\SysWOW64\user32.dll | 153024
+       443 |       442 |    209962 |    0 |      1 |                         func@0x6bab3400 | C:\Windows\SysWOW64\user32.dll | 209920
+       444 |       443 |    181186 |    0 |      1 |                         func@0x6922c190 | C:\Windows\SysWOW64\opengl32.dll | 180624
+       445 |       444 |    111382 |    0 |      1 |                         CallWindowProcW | C:\Windows\SysWOW64\user32.dll | 111232
+       446 |       445 |    153746 |    0 |      1 |                         func@0x6baa55c0 | C:\Windows\SysWOW64\user32.dll | 153024
+       447 |       446 |    209962 |    0 |      1 |                         func@0x6bab3400 | C:\Windows\SysWOW64\user32.dll | 209920
+       448 |       447 |    237071 |    0 |      0 |                           func@0x439ab0 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 236208
+       449 |       448 |    236186 |    0 |      0 |                           func@0x439a60 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 236128
+       450 |       449 |     10908 |    0 |      1 |                         NtUserSetCursor | C:\Windows\SysWOW64\win32u.dll | 10896
+       451 |        65 |     77057 |    0 |      1 |                         func@0x10012cc0 | C:\Windows\SysWOW64\dwmapi.dll | 76992
+       452 |       451 |    273856 |    0 |      1 |                         RtlAllocateHeap | C:\Windows\SysWOW64\ntdll.dll | 273856
+       453 |       204 |   4430070 |    0 |      1 |                         func@0x10439890 | C:\Windows\SysWOW64\ig75icd32.dll | 4429968
+       454 |       453 |   4428557 |    0 |      1 |                         func@0x10439290 | C:\Windows\SysWOW64\ig75icd32.dll | 4428432
+       455 |       454 |     79841 |    0 |      1 |                      AdjustWindowRectEx | C:\Windows\SysWOW64\user32.dll | 79792
+       456 |       455 |     79933 |    0 |      1 |                         func@0x6ba937e6 | C:\Windows\SysWOW64\user32.dll | 79846
+       457 |       456 |     80013 |    0 |      1 |                         func@0x6ba93870 | C:\Windows\SysWOW64\user32.dll | 79984
+       458 |        86 |    185671 |    0 |      1 |                          wglSwapBuffers | C:\Windows\SysWOW64\opengl32.dll | 185552
+       459 |       687 |    119210 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       460 |       459 |     69981 |    0 |      0 |                   InputManager::GetAxis | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 69886
+       461 |       460 |    103607 |    0 |      0 |std::map<char *,struct Key,struct std::less<char *>,class std::allocator<struct std::pair<char * const,struct Key> > >::operator[] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 103512
+       462 |       461 |    104048 |    0 |      0 |std::map<char *, Key, std::less<char *>, std::allocator<std::pair<char *const, Key> > >::try_emplace | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 103996
+       463 |       462 |    104854 |    0 |      0 |std::map<char *, Key, std::less<char *>, std::allocator<std::pair<char *const, Key> > >::_Try_emplace | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 104092
+       464 |       463 |    109926 |    0 |      0 |std::pair<std::_Tree<std::_Tmap_traits<char *, Key, std::less<char *>, std::allocator<std::pair<char *const, Key> >, 0> >::iterator, bool>::pair | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 109848
+       465 |       464 |    112544 |    0 |      0 |                            std::forward | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 112544
+       466 |       137 |    189690 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Iput | C:\Windows\SysWOW64\msvcp140d.dll | 188656
+       467 |       466 |    121893 |    0 |      1 |                         func@0x1001dbf0 | C:\Windows\SysWOW64\msvcp140d.dll | 121840
+       468 |       467 |    121293 |    0 |      1 |                         func@0x1001d9a0 | C:\Windows\SysWOW64\msvcp140d.dll | 121248
+       469 |       468 |    132172 |    0 |      1 |                         func@0x10020400 | C:\Windows\SysWOW64\msvcp140d.dll | 132096
+       470 |       469 |    110945 |    0 |      1 |                         func@0x1001b150 | C:\Windows\SysWOW64\msvcp140d.dll | 110928
+       471 |       470 |    141105 |    0 |      1 |                         func@0x10022720 | C:\Windows\SysWOW64\msvcp140d.dll | 141088
+       472 |       471 |    130526 |    0 |      1 |                         func@0x1001fd40 | C:\Windows\SysWOW64\msvcp140d.dll | 130368
+       473 |       472 |    490157 |    0 |      1 |                         func@0x10077aa0 | C:\Windows\SysWOW64\msvcp140d.dll | 490144
+       474 |       473 |    607099 |    0 |      1 |                                free_dbg | C:\Windows\SysWOW64\ucrtbased.dll | 606976
+       475 |       474 |    596305 |    0 |      1 |                         func@0x10091720 | C:\Windows\SysWOW64\ucrtbased.dll | 595744
+       476 |       475 |    594958 |    0 |      1 |                         func@0x100913d0 | C:\Windows\SysWOW64\ucrtbased.dll | 594896
+       477 |         8 |         0 |    0 |      0 |                [Unknown stack frame(s)] | n/a | 0
+       478 |       477 |    154966 |    0 |      1 |                         func@0x10025960 | C:\Windows\SysWOW64\msvcp140d.dll | 153952
+       479 |       478 |    487184 |    0 |      1 |                         func@0x10076f10 | C:\Windows\SysWOW64\msvcp140d.dll | 487184
+       480 |       136 |    197072 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put | C:\Windows\SysWOW64\msvcp140d.dll | 197008
+       481 |       480 |    201111 |    0 |      1 |                         func@0x10031170 | C:\Windows\SysWOW64\msvcp140d.dll | 201072
+       482 |       481 |    200875 |    0 |      1 |                         func@0x10031080 | C:\Windows\SysWOW64\msvcp140d.dll | 200832
+       483 |       482 |    939344 |    0 |      1 |                _stdio_common_vsprintf_s | C:\Windows\SysWOW64\ucrtbased.dll | 939344
+       484 |       471 |    130404 |    0 |      1 |                         func@0x1001fd40 | C:\Windows\SysWOW64\msvcp140d.dll | 130368
+       485 |       321 |   1376197 |    0 |      1 |                         func@0x1014ffa0 | C:\Windows\SysWOW64\ig75icd32.dll | 1376160
+       486 |       485 |   4583974 |    0 |      1 |                         func@0x1045f210 | C:\Windows\SysWOW64\ig75icd32.dll | 4583952
+       487 |       403 |    475344 |    0 |      1 |                KiUserCallbackDispatcher | C:\Windows\SysWOW64\ntdll.dll | 475344
+       488 |       141 |    154189 |    0 |      1 |                         func@0x10025960 | C:\Windows\SysWOW64\msvcp140d.dll | 153952
+       489 |       482 |    939381 |    0 |      1 |                _stdio_common_vsprintf_s | C:\Windows\SysWOW64\ucrtbased.dll | 939344
+       490 |       489 |    837500 |    0 |      1 |                         func@0x100cc650 | C:\Windows\SysWOW64\ucrtbased.dll | 837200
+       491 |       490 |    831204 |    0 |      1 |                         func@0x100cacd0 | C:\Windows\SysWOW64\ucrtbased.dll | 830672
+       492 |       683 |    862419 |    1 |      1 |    [Loop@0x100d2871 in func@0x100d27a2] | C:\Windows\SysWOW64\ucrtbased.dll | 862321
+       493 |       492 |    868418 |    0 |      1 |                         func@0x100d4040 | C:\Windows\SysWOW64\ucrtbased.dll | 868416
+       494 |       184 |    228569 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       495 |       494 |    115000 |    0 |      1 |                        GetAsyncKeyState | C:\Windows\SysWOW64\user32.dll | 114816
+       496 |       495 |     11580 |    0 |      1 |                  NtUserGetAsyncKeyState | C:\Windows\SysWOW64\win32u.dll | 11568
+       497 |        70 |    479815 |    0 |      1 |std::basic_streambuf<char,struct std::char_traits<char> >::sputn | C:\Windows\SysWOW64\msvcp140d.dll | 479776
+       498 |       497 |    487216 |    0 |      1 |                         func@0x10076f30 | C:\Windows\SysWOW64\msvcp140d.dll | 487216
+       499 |       164 |   2574305 |    0 |      1 |                         func@0x10274580 | C:\Windows\SysWOW64\ig75icd32.dll | 2573696
+       500 |       499 |   4070023 |    0 |      1 |                         func@0x103e0ce0 | C:\Windows\SysWOW64\ig75icd32.dll | 4066528
+       501 |       687 |    119672 |    1 |      0 |              [Loop at line 191 in main] | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 118876
+       502 |       501 |    185114 |    0 |      0 |                 Shader::UniformMatrix4f | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 185052
+       503 |       502 |   2764448 |    0 |      1 |                         func@0x102a2ea0 | C:\Windows\SysWOW64\ig75icd32.dll | 2764448
+       504 |       167 |   2132339 |    0 |      1 |                         func@0x10208789 | C:\Windows\SysWOW64\ig75icd32.dll | 2131849
+       505 |       504 |   1665806 |    0 |      1 |                         func@0x10196ae0 | C:\Windows\SysWOW64\ig75icd32.dll | 1665760
+       506 |       188 |   1413577 |    0 |      1 |                         func@0x101590b0 | C:\Windows\SysWOW64\ig75icd32.dll | 1413296
+       507 |       506 |     85967 |    0 |      1 |                         func@0x10014ea0 | C:\Windows\SysWOW64\ig75icd32.dll | 85664
+       508 |       507 |     88428 |    0 |      1 |                         func@0x10015190 | C:\Windows\SysWOW64\ig75icd32.dll | 86416
+       509 |       508 |    795231 |    0 |      1 |                         func@0x100c2250 | C:\Windows\SysWOW64\ig75icd32.dll | 795216
+       510 |       509 |    792941 |    0 |      1 |                         func@0x100c1910 | C:\Windows\SysWOW64\ig75icd32.dll | 792848
+       511 |       245 |   3778210 |    0 |      1 |                         func@0x1039a31f | C:\Windows\SysWOW64\ig75icd32.dll | 3777311
+       512 |       511 |   3449065 |    0 |      1 |                         func@0x10349fe0 | C:\Windows\SysWOW64\ig75icd32.dll | 3448800
+       513 |       512 |   3506554 |    0 |      1 |                         func@0x10358100 | C:\Windows\SysWOW64\ig75icd32.dll | 3506432
+       514 |       513 |   3499585 |    0 |      1 |                         func@0x10356510 | C:\Windows\SysWOW64\ig75icd32.dll | 3499280
+       515 |       514 |   3532528 |    0 |      1 |                         func@0x1035dfb0 | C:\Windows\SysWOW64\ig75icd32.dll | 3530672
+       516 |       515 |   3528973 |    0 |      1 |                         func@0x1035d8a0 | C:\Windows\SysWOW64\ig75icd32.dll | 3528864
+       517 |       447 |    237363 |    0 |      0 |                           func@0x439ab0 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 236208
+       518 |       184 |    228771 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       519 |       518 |    500788 |    0 |      1 |                            SetCursorPos | C:\Windows\SysWOW64\user32.dll | 500768
+       520 |       519 |     11164 |    0 |      1 |                      NtUserCallTwoParam | C:\Windows\SysWOW64\win32u.dll | 11152
+       521 |       189 |   4397275 |    0 |      1 |                         func@0x104318d0 | C:\Windows\SysWOW64\ig75icd32.dll | 4397264
+       522 |       521 |1857908736 |    0 |      0 |              [Outside any known module] | n/a | 0
+       523 |       447 |    237383 |    0 |      0 |                           func@0x439ab0 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 236208
+       524 |       523 |    157178 |    0 |      1 |                         func@0x6baa6390 | C:\Windows\SysWOW64\user32.dll | 156560
+       525 |       524 |    220887 |    0 |      1 |                         func@0x71b35ec0 | C:\Windows\SysWOW64\uxtheme.dll | 220864
+       526 |       525 |    225730 |    0 |      1 |                         func@0x71b36ac0 | C:\Windows\SysWOW64\uxtheme.dll | 223936
+       527 |       526 |    151762 |    0 |      1 |                         func@0x71b250b0 | C:\Windows\SysWOW64\uxtheme.dll | 151728
+       528 |       527 |    155334 |    0 |      1 |                         func@0x71b25e5c | C:\Windows\SysWOW64\uxtheme.dll | 155228
+       529 |       528 |    159537 |    0 |      1 |                         func@0x71b26a70 | C:\Windows\SysWOW64\uxtheme.dll | 158320
+       530 |        66 |   1645997 |    0 |      1 |                         func@0x55191d00 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1645824
+       531 |       530 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       532 |       531 |   2020513 |    0 |      1 |                         func@0x551ed430 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2020400
+       533 |       756 |   2023729 |    1 |      1 |    [Loop@0x551ee053 in func@0x551ee040] | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023507
+       534 |       533 |    838261 |    0 |      1 |                          SwitchToThread | C:\Windows\SysWOW64\KernelBase.dll | 838256
+       535 |       534 |    467324 |    0 |      1 |                        NtYieldExecution | C:\Windows\SysWOW64\ntdll.dll | 467312
+       536 |       729 |   4398497 |    1 |      1 |    [Loop@0x10431d42 in func@0x10431cd0] | C:\Windows\SysWOW64\ig75icd32.dll | 4398402
+       537 |       536 |   4399796 |    0 |      1 |                         func@0x104321b0 | C:\Windows\SysWOW64\ig75icd32.dll | 4399536
+       538 |       230 |   4369211 |    0 |      1 |                         func@0x1042a950 | C:\Windows\SysWOW64\ig75icd32.dll | 4368720
+       539 |       739 |   4398568 |    1 |      1 |    [Loop@0x10431d42 in func@0x10431cd0] | C:\Windows\SysWOW64\ig75icd32.dll | 4398402
+       540 |       539 |   4398139 |    0 |      1 |                         func@0x10431b90 | C:\Windows\SysWOW64\ig75icd32.dll | 4397968
+       541 |       540 |   4397689 |    0 |      1 |                         func@0x10431a60 | C:\Windows\SysWOW64\ig75icd32.dll | 4397664
+       542 |       541 |   4397326 |    0 |      1 |                         func@0x10431900 | C:\Windows\SysWOW64\ig75icd32.dll | 4397312
+       543 |       542 |   4382231 |    0 |      1 |                         func@0x1042de00 | C:\Windows\SysWOW64\ig75icd32.dll | 4382208
+       544 |       402 |    186800 |    0 |      1 |                            PeekMessageW | C:\Windows\SysWOW64\user32.dll | 186672
+       545 |       350 |   4376336 |    0 |      1 |                         func@0x1042c6f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4376304
+       546 |       545 |   4399891 |    0 |      1 |                         func@0x104322f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4399856
+       547 |       256 |   3507867 |    0 |      1 |                         func@0x10358310 | C:\Windows\SysWOW64\ig75icd32.dll | 3506960
+       548 |       547 |    301589 |    0 |      1 |                         func@0x10049010 | C:\Windows\SysWOW64\ig75icd32.dll | 299024
+       549 |       206 |   1519185 |    0 |      1 |                         func@0x10172e50 | C:\Windows\SysWOW64\ig75icd32.dll | 1519184
+       550 |       404 |    139391 |    0 |      1 |                         func@0x6baa2040 | C:\Windows\SysWOW64\user32.dll | 139328
+       551 |       550 |     73772 |    0 |      1 |                           ImmProcessKey | C:\Windows\SysWOW64\imm32.dll | 73600
+       552 |       551 |    239699 |    0 |      1 |                        CtfImeProcessKey | C:\Windows\SysWOW64\msctf.dll | 239504
+       553 |       552 |    140400 |    0 |      1 |                         func@0x10022320 | C:\Windows\SysWOW64\msctf.dll | 140064
+       554 |       553 |     15104 |    0 |      1 |                            ImmUnlockIMC | C:\Windows\SysWOW64\imm32.dll | 14960
+       555 |       234 |    792413 |    0 |      1 |                         func@0x100c1726 | C:\Windows\SysWOW64\gdi32full.dll | 792358
+       556 |       555 |    957648 |    0 |      1 |                             FreeLibrary | C:\Windows\SysWOW64\KernelBase.dll | 957648
+       557 |       545 |   4400075 |    0 |      1 |                         func@0x104322f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4399856
+       558 |       557 |   4400473 |    0 |      1 |                         func@0x104324e0 | C:\Windows\SysWOW64\ig75icd32.dll | 4400352
+       559 |       558 |   4453325 |    0 |      1 |                         func@0x1043f3b4 | C:\Windows\SysWOW64\ig75icd32.dll | 4453300
+       560 |       559 |    264567 |    0 |      1 |                             RtlFreeHeap | C:\Windows\SysWOW64\ntdll.dll | 264384
+       561 |       100 |     76796 |    0 |      1 |                         func@0x10012bc0 | C:\Windows\SysWOW64\dwmapi.dll | 76736
+       562 |       205 |   1791169 |    0 |      1 |                         func@0x101b5320 | C:\Windows\SysWOW64\ig75icd32.dll | 1790752
+       563 |       562 |   1920487 |    0 |      1 |                         func@0x101d4da0 | C:\Windows\SysWOW64\ig75icd32.dll | 1920416
+       564 |       451 |    273917 |    0 |      1 |                         RtlAllocateHeap | C:\Windows\SysWOW64\ntdll.dll | 273856
+       565 |       564 |    274313 |    0 |      1 |                         func@0x4b2c2e12 | C:\Windows\SysWOW64\ntdll.dll | 273938
+       566 |       715 |    278577 |    1 |      1 |    [Loop@0x4b2c3f4f in func@0x4b2c3d62] | C:\Windows\SysWOW64\ntdll.dll | 278351
+       567 |       380 |    692343 |    0 |      1 |                         func@0x100a9022 | C:\Windows\SysWOW64\ucrtbased.dll | 692258
+       568 |       539 |   4398246 |    0 |      1 |                         func@0x10431b90 | C:\Windows\SysWOW64\ig75icd32.dll | 4397968
+       569 |       204 |   4430053 |    0 |      1 |                         func@0x10439890 | C:\Windows\SysWOW64\ig75icd32.dll | 4429968
+       570 |       569 |   4424910 |    0 |      1 |                         func@0x10438460 | C:\Windows\SysWOW64\ig75icd32.dll | 4424800
+       571 |       570 |    189968 |    0 |      1 |                        GetSystemMetrics | C:\Windows\SysWOW64\user32.dll | 189968
+       572 |       477 |   3530688 |    0 |      1 |                         func@0x1035dfb0 | C:\Windows\SysWOW64\ig75icd32.dll | 3530672
+       573 |       508 |   4397071 |    0 |      1 |                         func@0x10431800 | C:\Windows\SysWOW64\ig75icd32.dll | 4397056
+       574 |       361 |   4398023 |    0 |      1 |                         func@0x10431b90 | C:\Windows\SysWOW64\ig75icd32.dll | 4397968
+       575 |       741 |   4372350 |    1 |      1 |    [Loop@0x1042b774 in func@0x1042b670] | C:\Windows\SysWOW64\ig75icd32.dll | 4372340
+       576 |       575 |   4382426 |    0 |      1 |                         func@0x1042deb0 | C:\Windows\SysWOW64\ig75icd32.dll | 4382384
+       577 |       739 |   4398402 |    1 |      1 |    [Loop@0x10431d42 in func@0x10431cd0] | C:\Windows\SysWOW64\ig75icd32.dll | 4398402
+       578 |       393 |    947187 |    0 |      1 |                          LoadLibraryExA | C:\Windows\SysWOW64\KernelBase.dll | 947168
+       579 |       578 |    957589 |    0 |      1 |                         func@0x100e9c57 | C:\Windows\SysWOW64\KernelBase.dll | 957527
+       580 |       579 |    257153 |    0 |      1 |            RtlAnsiStringToUnicodeString | C:\Windows\SysWOW64\ntdll.dll | 256976
+       581 |       717 |    257668 |    1 |      1 |[Loop@0x4b2bed50 in RtlMultiByteToUnicodeN] | C:\Windows\SysWOW64\ntdll.dll | 257360
+       582 |       256 |   3529096 |    0 |      1 |                         func@0x1035d930 | C:\Windows\SysWOW64\ig75icd32.dll | 3529008
+       583 |       582 |   3529096 |    0 |      1 |                         func@0x1035d930 | C:\Windows\SysWOW64\ig75icd32.dll | 3529008
+       584 |       583 |    303622 |    0 |      1 |                         func@0x10049d00 | C:\Windows\SysWOW64\ig75icd32.dll | 302336
+       585 |       584 |   4374337 |    0 |      1 |                         func@0x1042beb0 | C:\Windows\SysWOW64\ig75icd32.dll | 4374192
+       586 |       230 |   4369198 |    0 |      1 |                         func@0x1042a950 | C:\Windows\SysWOW64\ig75icd32.dll | 4368720
+       587 |       586 |   4377282 |    0 |      1 |                         func@0x1042ca80 | C:\Windows\SysWOW64\ig75icd32.dll | 4377216
+       588 |       587 |   4373108 |    0 |      1 |                         func@0x1042b8f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4372720
+       589 |       588 |   4377155 |    0 |      1 |                         func@0x1042ca10 | C:\Windows\SysWOW64\ig75icd32.dll | 4377104
+       590 |       589 |   4376336 |    0 |      1 |                         func@0x1042c6f0 | C:\Windows\SysWOW64\ig75icd32.dll | 4376304
+       591 |       590 |     89504 |    0 |      1 |                 QueryPerformanceCounter | C:\Windows\SysWOW64\kernel32.dll | 89504
+       592 |       206 |   1527927 |    0 |      1 |                         func@0x1017459e | C:\Windows\SysWOW64\ig75icd32.dll | 1525150
+       593 |       592 |   1669790 |    0 |      1 |                         func@0x10197a40 | C:\Windows\SysWOW64\ig75icd32.dll | 1669696
+       594 |       593 |   1669627 |    0 |      1 |                         func@0x10197980 | C:\Windows\SysWOW64\ig75icd32.dll | 1669504
+       595 |       594 |    287038 |    0 |      1 |                         func@0x10045fb0 | C:\Windows\SysWOW64\ig75icd32.dll | 286640
+       596 |       595 |    285691 |    0 |      1 |                         func@0x10045a20 | C:\Windows\SysWOW64\ig75icd32.dll | 285216
+       597 |       596 |   4393432 |    0 |      1 |                         func@0x104303c0 | C:\Windows\SysWOW64\ig75icd32.dll | 4391872
+       598 |       597 |    307798 |    0 |      1 |                 RtlLeaveCriticalSection | C:\Windows\SysWOW64\ntdll.dll | 307792
+       599 |        88 |   4349168 |    0 |      1 |                          DrvSwapBuffers | C:\Windows\SysWOW64\ig75icd32.dll | 4348528
+       600 |       599 |   1389281 |    0 |      1 |                         func@0x101532e0 | C:\Windows\SysWOW64\ig75icd32.dll | 1389280
+       601 |        85 |    937670 |    0 |      1 |                             SwapBuffers | C:\Windows\SysWOW64\gdi32full.dll | 937600
+       602 |       601 |   1464003 |    0 |      1 |                         func@0x551655df | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 1463775
+       603 |       602 |    180912 |    0 |      1 |                         func@0x5502c290 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 180880
+       604 |       603 |   2014148 |    0 |      1 |                         func@0x551eb9b0 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2013616
+       605 |       604 |   2020513 |    0 |      1 |                         func@0x551ed430 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2020400
+       606 |       758 |   2023729 |    1 |      1 |    [Loop@0x551ee053 in func@0x551ee040] | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023507
+       607 |       606 |    838261 |    0 |      1 |                          SwitchToThread | C:\Windows\SysWOW64\KernelBase.dll | 838256
+       608 |       607 |    467324 |    0 |      1 |                        NtYieldExecution | C:\Windows\SysWOW64\ntdll.dll | 467312
+       609 |        86 |    185642 |    0 |      1 |                          wglSwapBuffers | C:\Windows\SysWOW64\opengl32.dll | 185552
+       610 |       609 |    179280 |    0 |      1 |                         func@0x6922bbec | C:\Windows\SysWOW64\opengl32.dll | 179180
+       611 |       610 |    179093 |    0 |      1 |                         func@0x6922bb5f | C:\Windows\SysWOW64\opengl32.dll | 179039
+       612 |       146 |    960623 |    0 |      1 |                         func@0x100ea810 | C:\Windows\SysWOW64\ucrtbased.dll | 960528
+       613 |       612 |    740738 |    0 |      1 |                         func@0x100b4d70 | C:\Windows\SysWOW64\ucrtbased.dll | 740720
+       614 |       613 |    740502 |    0 |      1 |                         func@0x100b4c80 | C:\Windows\SysWOW64\ucrtbased.dll | 740480
+       615 |       614 |   1308189 |    0 |      1 |                         func@0x1013f610 | C:\Windows\SysWOW64\ucrtbased.dll | 1308176
+       616 |       615 |    608603 |    0 |      1 |                         func@0x10094950 | C:\Windows\SysWOW64\ucrtbased.dll | 608592
+       617 |       550 |     73628 |    0 |      1 |                           ImmProcessKey | C:\Windows\SysWOW64\imm32.dll | 73600
+       618 |       617 |     12184 |    0 |      1 |                           ImmGetContext | C:\Windows\SysWOW64\imm32.dll | 12112
+       619 |       618 |     13303 |    0 |      1 |                        ImmLockClientImc | C:\Windows\SysWOW64\imm32.dll | 13024
+       620 |       619 |     26684 |    0 |      1 |                 NtUserQueryInputContext | C:\Windows\SysWOW64\win32u.dll | 26672
+       621 |       137 |    188910 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Iput | C:\Windows\SysWOW64\msvcp140d.dll | 188656
+       622 |       621 |    115693 |    0 |      1 |                         func@0x1001c3c0 | C:\Windows\SysWOW64\msvcp140d.dll | 115648
+       623 |       622 |    114611 |    0 |      1 |                         func@0x1001bf6f | C:\Windows\SysWOW64\msvcp140d.dll | 114543
+       624 |       623 |    129108 |    0 |      1 |                         func@0x1001f830 | C:\Windows\SysWOW64\msvcp140d.dll | 129072
+       625 |       624 |    138915 |    0 |      1 |                         func@0x10021e90 | C:\Windows\SysWOW64\msvcp140d.dll | 138896
+       626 |       625 |    129452 |    0 |      1 |                         func@0x1001f8af | C:\Windows\SysWOW64\msvcp140d.dll | 129199
+       627 |       151 |    952083 |    0 |      1 |                               WriteFile | C:\Windows\SysWOW64\KernelBase.dll | 952048
+       628 |        82 |    952048 |    0 |      1 |                               WriteFile | C:\Windows\SysWOW64\KernelBase.dll | 952048
+       629 |       256 |   3507454 |    0 |      1 |                         func@0x10358310 | C:\Windows\SysWOW64\ig75icd32.dll | 3506960
+       630 |       629 |   3524028 |    0 |      1 |                         func@0x1035c3cb | C:\Windows\SysWOW64\ig75icd32.dll | 3523531
+       631 |       630 |     58972 |    0 |      1 |                         func@0x1000e650 | C:\Windows\SysWOW64\ig75icd32.dll | 58960
+       632 |       184 |    228655 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       633 |       134 |    420455 |    0 |      1 |std::basic_ostream<char,struct std::char_traits<char> >::operator<< | C:\Windows\SysWOW64\msvcp140d.dll | 420320
+       634 |       633 |    177563 |    0 |      1 |                         func@0x1002b4b0 | C:\Windows\SysWOW64\msvcp140d.dll | 177328
+       635 |       634 |    380723 |    0 |      1 |                  std::_Lockit::~_Lockit | C:\Windows\SysWOW64\msvcp140d.dll | 380672
+       636 |         8 |    119845 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       637 |       636 |     62170 |    0 |      0 |                         Window::cleanUp | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 62128
+       638 |       637 |    203117 |    0 |      0 |                       glfwDestroyWindow | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 203040
+       639 |       638 |    226752 |    0 |      0 |              _glfwPlatformDestroyWindow | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 226704
+       640 |       639 |    248181 |    0 |      0 |                           func@0x43c960 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 248160
+       641 |       640 |    129306 |    0 |      1 |                        wglDeleteContext | C:\Windows\SysWOW64\opengl32.dll | 129200
+       642 |       641 |   4346360 |    0 |      1 |                        DrvDeleteContext | C:\Windows\SysWOW64\ig75icd32.dll | 4346128
+       643 |       642 |     47842 |    0 |      1 |                         func@0x1000b570 | C:\Windows\SysWOW64\ig75icd32.dll | 46448
+       644 |       643 |    781658 |    0 |      1 |                         func@0x100becf0 | C:\Windows\SysWOW64\ig75icd32.dll | 781552
+       645 |       644 |   4365451 |    0 |      1 |                         func@0x10429c4f | C:\Windows\SysWOW64\ig75icd32.dll | 4365391
+       646 |       645 |   4398485 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       647 |       744 |   4399312 |    1 |      1 |    [Loop@0x104320c6 in func@0x104320b0] | C:\Windows\SysWOW64\ig75icd32.dll | 4399302
+       648 |       647 |   4378167 |    0 |      1 |                         func@0x1042cd8b | C:\Windows\SysWOW64\ig75icd32.dll | 4377995
+       649 |       648 |   4438292 |    0 |      1 |                         func@0x1043b8ff | C:\Windows\SysWOW64\ig75icd32.dll | 4438271
+       650 |       649 |     16988 |    0 |      1 |            NtGdiDdDDIDestroyAllocation2 | C:\Windows\SysWOW64\win32u.dll | 16976
+       651 |       636 |    475420 |    0 |      1 |                KiUserCallbackDispatcher | C:\Windows\SysWOW64\ntdll.dll | 475344
+       652 |       651 |    193720 |    0 |      1 |                         func@0x6baaf470 | C:\Windows\SysWOW64\user32.dll | 193648
+       653 |       652 |    522279 |    0 |      1 |                         func@0x6baff7c0 | C:\Windows\SysWOW64\user32.dll | 522176
+       654 |       653 |    122457 |    0 |      1 |                         func@0x6ba9dd30 | C:\Windows\SysWOW64\user32.dll | 122160
+       655 |       654 |   4352598 |    0 |      1 |                         func@0x10426a00 | C:\Windows\SysWOW64\ig75icd32.dll | 4352512
+       656 |       655 |   4353669 |    0 |      1 |                         func@0x10426d60 | C:\Windows\SysWOW64\ig75icd32.dll | 4353376
+       657 |       656 |   4426278 |    0 |      1 |                         func@0x104389d0 | C:\Windows\SysWOW64\ig75icd32.dll | 4426192
+       658 |       746 |   1392418 |    1 |      1 |    [Loop@0x10153ef1 in func@0x10153ed0] | C:\Windows\SysWOW64\ig75icd32.dll | 1392369
+       659 |       658 |   3454781 |    0 |      1 |                         func@0x1034b6e4 | C:\Windows\SysWOW64\ig75icd32.dll | 3454692
+       660 |       659 |   1452654 |    0 |      1 |                         func@0x101629dc | C:\Windows\SysWOW64\ig75icd32.dll | 1452508
+       661 |       660 |   1373553 |    0 |      1 |                         func@0x1014f560 | C:\Windows\SysWOW64\ig75icd32.dll | 1373536
+       662 |       661 |   1430316 |    0 |      1 |                         func@0x1015d310 | C:\Windows\SysWOW64\ig75icd32.dll | 1430288
+       663 |       662 |   1421567 |    0 |      1 |                         func@0x1015b080 | C:\Windows\SysWOW64\ig75icd32.dll | 1421440
+       664 |       663 |   3537975 |    0 |      1 |                         func@0x1035fbf0 | C:\Windows\SysWOW64\ig75icd32.dll | 3537904
+       665 |       664 |   1393483 |    0 |      1 |                         func@0x10154330 | C:\Windows\SysWOW64\ig75icd32.dll | 1393456
+       666 |       665 |   4378241 |    0 |      1 |                         func@0x1042ce60 | C:\Windows\SysWOW64\ig75icd32.dll | 4378208
+       667 |       666 |   4378167 |    0 |      1 |                         func@0x1042cd8b | C:\Windows\SysWOW64\ig75icd32.dll | 4377995
+       668 |       667 |   4438292 |    0 |      1 |                         func@0x1043b8ff | C:\Windows\SysWOW64\ig75icd32.dll | 4438271
+       669 |       668 |     16988 |    0 |      1 |            NtGdiDdDDIDestroyAllocation2 | C:\Windows\SysWOW64\win32u.dll | 16976
+       670 |       405 |    184096 |    0 |      1 |                         func@0x1002ce92 | C:\Windows\SysWOW64\msctf.dll | 183954
+       671 |       405 |    184440 |    0 |      1 |                         func@0x1002ce92 | C:\Windows\SysWOW64\msctf.dll | 183954
+       672 |        35 |    956805 |    0 |      1 |                         func@0x100e9900 | C:\Windows\SysWOW64\igdusc32.dll | 956672
+       673 |        35 |    957165 |    0 |      1 |                         func@0x100e9900 | C:\Windows\SysWOW64\igdusc32.dll | 956672
+       674 |        44 |    491024 |    0 |      1 |                         func@0x10077d8d | C:\Windows\SysWOW64\igdusc32.dll | 490893
+       675 |        44 |    491093 |    0 |      1 |                         func@0x10077d8d | C:\Windows\SysWOW64\igdusc32.dll | 490893
+       676 |        81 |    692582 |    0 |      1 |                         func@0x100a9100 | C:\Windows\SysWOW64\ucrtbased.dll | 692480
+       677 |        81 |    692822 |    0 |      1 |                         func@0x100a9100 | C:\Windows\SysWOW64\ucrtbased.dll | 692480
+       678 |       116 |    692582 |    0 |      1 |                         func@0x100a9100 | C:\Windows\SysWOW64\ucrtbased.dll | 692480
+       679 |       116 |    692822 |    0 |      1 |                         func@0x100a9100 | C:\Windows\SysWOW64\ucrtbased.dll | 692480
+       680 |       150 |    692582 |    0 |      1 |                         func@0x100a9100 | C:\Windows\SysWOW64\ucrtbased.dll | 692480
+       681 |       150 |    692822 |    0 |      1 |                         func@0x100a9100 | C:\Windows\SysWOW64\ucrtbased.dll | 692480
+       682 |       491 |    862282 |    0 |      1 |                         func@0x100d27a2 | C:\Windows\SysWOW64\ucrtbased.dll | 862114
+       683 |       682 |    862321 |    1 |      1 |    [Loop@0x100d284a in func@0x100d27a2] | C:\Windows\SysWOW64\ucrtbased.dll | 862282
+       684 |       491 |    862419 |    0 |      1 |                         func@0x100d27a2 | C:\Windows\SysWOW64\ucrtbased.dll | 862114
+       685 |         9 |    122982 |    0 |      0 |                 FileUtils::LoadTextFile | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 122736
+       686 |         9 |    123194 |    0 |      0 |                 FileUtils::LoadTextFile | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 122736
+       687 |         8 |    118876 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       688 |         8 |    119815 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       689 |        62 |    249476 |    0 |      0 |                           func@0x43ce50 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 249424
+       690 |        62 |    249481 |    0 |      0 |                           func@0x43ce50 | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 249424
+       691 |         8 |    119015 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       692 |         8 |    119147 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       693 |         8 |    119109 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       694 |         8 |    118986 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       695 |         8 |    119784 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       696 |         8 |    118987 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       697 |       184 |    228455 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       698 |       184 |    228502 |    0 |      0 |                 _glfwPlatformPollEvents | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 228400
+       699 |         8 |    119210 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       700 |         8 |    119672 |    0 |      0 |                                    main | C:\Users\Tobi\Documents\Visual Studio 2017\Projects\OpenGL Project\Debug\OpenGL Project.exe | 116133
+       701 |        71 |    161223 |    0 |      1 |std::basic_streambuf<char,struct std::char_traits<char> >::xsputn | C:\Windows\SysWOW64\msvcp140d.dll | 161200
+       702 |        71 |    161424 |    0 |      1 |std::basic_streambuf<char,struct std::char_traits<char> >::xsputn | C:\Windows\SysWOW64\msvcp140d.dll | 161200
+       703 |       138 |    192069 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Put | C:\Windows\SysWOW64\msvcp140d.dll | 192064
+       704 |       138 |    192122 |    0 |      1 |std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Put | C:\Windows\SysWOW64\msvcp140d.dll | 192064
+       705 |       277 |    274606 |    0 |      1 |                         func@0x4b2c3020 | C:\Windows\SysWOW64\ntdll.dll | 274464
+       706 |       705 |    274609 |    1 |      1 |    [Loop@0x4b2c30ae in func@0x4b2c3020] | C:\Windows\SysWOW64\ntdll.dll | 274606
+       707 |       277 |    274787 |    0 |      1 |                         func@0x4b2c3020 | C:\Windows\SysWOW64\ntdll.dll | 274464
+       708 |       368 |    274606 |    0 |      1 |                         func@0x4b2c3020 | C:\Windows\SysWOW64\ntdll.dll | 274464
+       709 |       708 |    274609 |    1 |      1 |    [Loop@0x4b2c30ae in func@0x4b2c3020] | C:\Windows\SysWOW64\ntdll.dll | 274606
+       710 |       368 |    274940 |    0 |      1 |                         func@0x4b2c3020 | C:\Windows\SysWOW64\ntdll.dll | 274464
+       711 |       413 |    318057 |    0 |      1 |                         func@0x4b2cda48 | C:\Windows\SysWOW64\ntdll.dll | 318024
+       712 |       413 |    318340 |    0 |      1 |                         func@0x4b2cda48 | C:\Windows\SysWOW64\ntdll.dll | 318024
+       713 |       418 |    254880 |    0 |      1 |                         func@0x4b2be280 | C:\Windows\SysWOW64\ntdll.dll | 254592
+       714 |       418 |    254979 |    0 |      1 |                         func@0x4b2be280 | C:\Windows\SysWOW64\ntdll.dll | 254592
+       715 |       565 |    278351 |    0 |      1 |                         func@0x4b2c3d62 | C:\Windows\SysWOW64\ntdll.dll | 277858
+       716 |       565 |    278577 |    0 |      1 |                         func@0x4b2c3d62 | C:\Windows\SysWOW64\ntdll.dll | 277858
+       717 |       580 |    257360 |    0 |      1 |                  RtlMultiByteToUnicodeN | C:\Windows\SysWOW64\ntdll.dll | 257280
+       718 |       580 |    257668 |    0 |      1 |                  RtlMultiByteToUnicodeN | C:\Windows\SysWOW64\ntdll.dll | 257280
+       719 |        24 |   5185895 |    0 |      1 |                         func@0x104f20b0 | C:\Windows\SysWOW64\ig75icd32.dll | 5185712
+       720 |        24 |   5186155 |    0 |      1 |                         func@0x104f20b0 | C:\Windows\SysWOW64\ig75icd32.dll | 5185712
+       721 |        53 |   1270592 |    0 |      1 |                         func@0x101362e0 | C:\Windows\SysWOW64\ig75icd32.dll | 1270496
+       722 |        53 |   1270613 |    0 |      1 |                         func@0x101362e0 | C:\Windows\SysWOW64\ig75icd32.dll | 1270496
+       723 |       157 |   2966705 |    0 |      1 |                         func@0x102d4490 | C:\Windows\SysWOW64\ig75icd32.dll | 2966672
+       724 |       157 |   2966705 |    0 |      1 |                         func@0x102d4490 | C:\Windows\SysWOW64\ig75icd32.dll | 2966672
+       725 |       242 |   3496496 |    0 |      1 |                         func@0x10355990 | C:\Windows\SysWOW64\ig75icd32.dll | 3496336
+       726 |       242 |   3496644 |    0 |      1 |                         func@0x10355990 | C:\Windows\SysWOW64\ig75icd32.dll | 3496336
+       727 |       351 |   4374386 |    0 |      1 |                         func@0x1042beb0 | C:\Windows\SysWOW64\ig75icd32.dll | 4374192
+       728 |       351 |   4374396 |    0 |      1 |                         func@0x1042beb0 | C:\Windows\SysWOW64\ig75icd32.dll | 4374192
+       729 |       360 |   4398402 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       730 |       360 |   4398568 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       731 |       364 |     30950 |    0 |      1 |                         func@0x100078e0 | C:\Windows\SysWOW64\ig75icd32.dll | 30944
+       732 |       364 |     30970 |    0 |      1 |                         func@0x100078e0 | C:\Windows\SysWOW64\ig75icd32.dll | 30944
+       733 |       365 |   4443259 |    0 |      1 |                         func@0x1043cc6d | C:\Windows\SysWOW64\ig75icd32.dll | 4443245
+       734 |       365 |   4443317 |    0 |      1 |                         func@0x1043cc6d | C:\Windows\SysWOW64\ig75icd32.dll | 4443245
+       735 |       429 |   4398800 |    0 |      1 |                         func@0x10431e10 | C:\Windows\SysWOW64\ig75icd32.dll | 4398608
+       736 |       735 |   4398929 |    1 |      1 |    [Loop@0x10431ed0 in func@0x10431e10] | C:\Windows\SysWOW64\ig75icd32.dll | 4398800
+       737 |       429 |   4398935 |    0 |      1 |                         func@0x10431e10 | C:\Windows\SysWOW64\ig75icd32.dll | 4398608
+       738 |       360 |   4398497 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       739 |       538 |   4398402 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       740 |       538 |   4398568 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       741 |       574 |   4372340 |    0 |      1 |                         func@0x1042b670 | C:\Windows\SysWOW64\ig75icd32.dll | 4372080
+       742 |       574 |   4372350 |    0 |      1 |                         func@0x1042b670 | C:\Windows\SysWOW64\ig75icd32.dll | 4372080
+       743 |       538 |   4398402 |    0 |      1 |                         func@0x10431cd0 | C:\Windows\SysWOW64\ig75icd32.dll | 4398288
+       744 |       646 |   4399302 |    0 |      1 |                         func@0x104320b0 | C:\Windows\SysWOW64\ig75icd32.dll | 4399280
+       745 |       646 |   4399312 |    0 |      1 |                         func@0x104320b0 | C:\Windows\SysWOW64\ig75icd32.dll | 4399280
+       746 |       657 |   1392369 |    0 |      1 |                         func@0x10153ed0 | C:\Windows\SysWOW64\ig75icd32.dll | 1392336
+       747 |       657 |   1392418 |    0 |      1 |                         func@0x10153ed0 | C:\Windows\SysWOW64\ig75icd32.dll | 1392336
+       748 |       198 |   2023507 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       749 |       198 |   2023729 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       750 |       286 |   2023507 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       751 |       286 |   2023729 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       752 |       356 |   2023507 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       753 |       356 |   2023729 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       754 |       398 |   2023507 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       755 |       398 |   2023729 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       756 |       532 |   2023507 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       757 |       532 |   2023729 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       758 |       605 |   2023507 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       759 |       605 |   2023729 |    0 |      1 |                         func@0x551ee040 | C:\Program Files (x86)\IntelSWTools\Advisor 2018\bin32\tpsstool.dll | 2023488
+       760 |        -1 |         0 |    0 |      0 |                      [Outside any loop] | n/a | 0

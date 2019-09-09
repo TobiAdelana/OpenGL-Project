@@ -3,7 +3,8 @@
 
 struct mat4
 {
-	mat4();
+	float elements[16] = { 0 };
+	mat4() : elements{ 0 } {};
 	mat4(float elements[16]);
 	mat4& multiply(const mat4& other);
 	mat4& multiply(const float other);
@@ -21,7 +22,6 @@ struct mat4
 	static mat4 perspective(float fov, float aspect, float near, float far);
 	static mat4 lookAt(const vec3& eye, const vec3& look, const vec3& up);
 	static mat4 translate(const vec3& other);
-	float elements[16];
 
 	friend std::ostream& operator<<(std::ostream& stream, const mat4& matrix);
 	friend mat4 operator+(mat4 left, const mat4& right);
@@ -34,5 +34,5 @@ struct mat4
 	mat4& operator-=(const mat4& other);
 	mat4& operator*=(const mat4& other);
 private:
-	float determinant;
+	float determinant = 0;
 };

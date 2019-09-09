@@ -39,6 +39,8 @@ void main()
 
 	// Ambient Light
 	vec3 ambient = light.colour * material.ambientColour;
-	vec3 result = (ambient + diffuse + specular);
+
+	float ambientweight = 0.3, diffuseweight = 0.2, specularweight = 0.8;
+	vec3 result = (ambient * ambientweight + diffuse * diffuseweight + specular * specularweight);
 	outColour = vec4(result, 1.0);
 }

@@ -2,24 +2,18 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-#define MATH_PI 3.14159265358979323846
-
-
-struct Math 
+namespace Math 
 {
-public:
-	static float Lerp(float a, float b, float t);
-	static float Clamp(float value, float min, float max);
-	static float Min(float value, float min);
-	static float Max(float valuse, float max);
-
-	static inline float toRadians(float degrees)
+	float Lerp(float a, float b, float t);
+	float Clamp(float value, float min, float max);
+	float Min(float value, float min);
+	float Max(float valuse, float max);
+	inline float toRadians(float degrees)
 	{
-		return (float)((degrees * M_PI) / 180.0f);
+		return degrees * M_PI / 180.0;
 	}
-
-	static inline float toDegrees(float radians)
+	inline float toDegrees(float radians)
 	{
-		return (float)(radians * 180.0f / M_PI);
+		return radians * 180.0 / M_PI;
 	}
 };

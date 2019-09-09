@@ -2,26 +2,22 @@
 #include "../../maths/vec3.h"
 #include "../../maths/vec4.h"
 
-enum LightType
+enum class LightType
 {
 	DIRECTION, POINT, SPOT
 };
 
-
-
 struct Light
 {
-	vec3 m_position;
-	LightType type;
-	vec3 m_colour, m_coneDirection;
-	float m_coneAngle, m_intensity, m_attenuation, m_ambientCoefficient;
+	vec3 m_position{};
+	LightType type = LightType::POINT;
+	vec3 m_colour = {};
+	vec3 m_coneDirection{};
+	float m_coneAngle;
+	float m_intensity;
+	float m_attenuation;
+	float m_ambientCoefficient;
 
 };
-
-struct SunLight : Light
-{
-	vec3 colour, direction;
-};
-
 
 
