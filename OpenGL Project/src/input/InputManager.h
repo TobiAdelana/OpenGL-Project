@@ -1,9 +1,12 @@
 #pragma once
 #include "../maths/vec2.h"
-#include <GLFW\glfw3.h>
 #include "../utils/Timer.h"
 #include "../maths/maths.h"
+#include "../graphics/window.h"
+#include <GLFW/glfw3.h>
 #include <map>
+#include <array>
+#include <vector>
 
 
 struct Key
@@ -34,20 +37,31 @@ struct Key
 	float m_sensitivity;
 	float m_axis;
 };
+
+using CursorPosCallback = void(*)(Window* win, vec2 position);
+using KeyBindings = std::map<const char*, Key>;
+// using KeyState = std::array<bool, InputManager::NUM_KEYS>;
 class InputManager
 {
 public:
 	static void Initalise();
-	static void RebindKey(char* name, const Key& key);
-	static const Key& GetKey(char* name);
-	static float GetAxis(char* name);
-	static float GetAxisRaw(char* name);
+	static void AddWindow(const Window& window);
+	static void RebindKey(const char* name, const Key& key);
+	static void SetCursorPosCallbackFunc(const Window& window, CursorPosCallback callbackFunc);
+	static const Key& GetKey(const char* name);
+	static float GetAxis(const char* name);
+	static float GetAxisRaw(const char* name);
 
-	static std::map<char*, Key> keyboardKeys;
-	static bool keyboardButtons[1024];
+	static std::map<const char*, Key> keyboardKeys;
+	static constexpr int NUM_KEYS = 1024;
+	// static bool keyboardButtons[NUM_KEYS];
+	static std::array<bool, NUM_KEYS> keyboardButtons;
 
 private:
-	static bool mouseButtons[GLFW_MOUSE_BUTTON_LAST + 1];
-	static bool joystickButtons[14];
+	static std::vector<Window> windows;
+	static CursorPosCallback cursorPosCallbackFunc;
+
+	static std::array<bool, GLFW_MOUSE_BUTTON_LAST + 1> mouseButtons;
+	static std::array<bool, 14> joystickButtons[14];
 
 };

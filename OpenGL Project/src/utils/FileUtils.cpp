@@ -20,29 +20,18 @@ std::string FileUtils::LoadTextFile(const char* filePath)
 
 int FileUtils::LoadObjFile(const std::string& filepath, Mesh& output)
 {
-	using namespace std;
-	ifstream file(filepath);
+	std::ifstream file(filepath);
 	if (!file.is_open())
 	{
-		cout << "[ERROR] Could not open OBJ File " << filepath << endl;
+		std::cout << "[ERROR] Could not open OBJ File " << filepath << std::endl;
 		return 1;
 	}
-	string line;
+	std::string line;
 	while (getline(file, line))
 	{
-		switch (line[0])
+		if(line[0] == 'v' && line[1] == 't')
 		{
-		case 'v':
-			switch (line[1])
-			{
-			case 't':
-				output.m_textures.push_back({ 3, "" });
-
-			}
-			break;
-		case 'f':
-		default:
-			break;
+			output.m_textures.push_back({ 3, "" });
 		}
 
 	}

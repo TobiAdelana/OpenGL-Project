@@ -132,9 +132,6 @@ int main()
 		0, 1, 2, 2, 3, 0
 	};
 	Mesh m(vertices, indices);
-	Mesh chess;
-	if (!chess.LoadObj("chess.obj"))
-		log("Not working");
 	// Normal Data
 
 	// Position Data
@@ -143,7 +140,7 @@ int main()
 	const std::string fragment = FileUtils::LoadTextFile("src/shaders/default.fs");
 	Shader defaultShader(vertex, fragment);
 
-	mat4 projection = mat4::perspective(45.0f, 640.0f / 480.0f, 0.3f, 10.0f);
+	mat4 projection = mat4::perspective(45.0f, (float)window.GetHeight() / window.GetWidth(), 0.3f, 10.0f);
 	mat4 view = mat4::lookAt(position, position + direction, vec3(0.0f, 1.0f, 0.0f));
 	mat4 model = mat4::scale(4.0f);
 	defaultShader.UniformMatrix4f("projection", 1, GL_FALSE, projection);
@@ -172,7 +169,6 @@ int main()
 		defaultShader.UniformMatrix4f("view", 1, GL_FALSE, view);
 		defaultShader.Uniform3f("cameraPos", position);
 		m.Draw(defaultShader);
-		chess.Draw(defaultShader);
 
 		window.update();
 	}

@@ -9,13 +9,13 @@
 #endif
 
 
-Window::Window(uint width, uint height, const char* title, bool fullscreen) 
+Window::Window(uint width, uint height, const std::string& title, bool fullscreen) 
 	: m_width(width), m_height(height), m_title(title), m_fullscreen(fullscreen)
 {
 	if (!init())
 	{
 		glfwTerminate();
-		throw std::exception("Window could not initalise");
+		throw std::exception("Window could not be initialised");
 	}
 	glfwSetWindowUserPointer(m_window, this);
 }
@@ -42,7 +42,7 @@ bool Window::init()
 	GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 	const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 	glfwWindowHint(GLFW_DECORATED, GL_TRUE);
-	m_window = glfwCreateWindow(m_width, m_height, m_title, m_fullscreen ? glfwGetPrimaryMonitor() : NULL, NULL);
+	m_window = glfwCreateWindow(m_width, m_height, m_title.c_str(), m_fullscreen ? glfwGetPrimaryMonitor() : NULL, NULL);
 	log(mode->width << ", " << mode -> height);
 	glfwSetWindowPos(m_window, (mode->width - m_width) /2 , (mode->height - m_height) /2);
 	if (!m_window)
@@ -112,6 +112,16 @@ void default_callback(GLFWwindow* gWindow, int key, int scancode, int action, in
 {
 	Window& win = *static_cast<Window*>(glfwGetWindowUserPointer(gWindow));
 	win.keys[key] = (action != GLFW_RELEASE);
+}
+
+uint Window::GetHeight() const
+{
+	return m_height;
+}
+
+uint Window::GetWidth() const
+{
+	return m_width;
 }
 
 void Window::SetCursorEnabled(bool enable)

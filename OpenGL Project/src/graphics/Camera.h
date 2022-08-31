@@ -4,7 +4,6 @@
 #include "../maths/vec3.h"
 #include "../maths/mat4.h"
 constexpr vec3 UP{ 0.0f, 1.0f, 0.0f };
-constexpr std::pair<int, int> a{ 1,2 };
 class Camera
 {
 public:

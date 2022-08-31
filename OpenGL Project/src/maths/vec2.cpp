@@ -1,5 +1,5 @@
 #include "vec2.h"
-
+#include <cassert>
 float vec2::GetMagnitude() const
 {
 	return sqrt((x * x) + (y * y));
@@ -9,9 +9,13 @@ float vec2::dot(const vec2& other)
 {
 	return (x * other.x) + (y * other.y);
 }
+
+// Precond: this->magnitude != 0 and other->magnitude != 0
+// Returns the angle between this and other in radians
 float vec2::angleBetween(const vec2& other)
 {
-	return acos(dot(other) / (GetMagnitude() * other.GetMagnitude())); // This value is in radians
+	assert(GetMagnitude() != 0 && other.GetMagnitude() != 0);
+	return acos(dot(other) / (GetMagnitude() * other.GetMagnitude())); 
 }
 vec2 & vec2::operator+=(const vec2 & other)
 {
@@ -35,11 +39,9 @@ vec2 & vec2::operator*=(const vec2 & other)
 }
 std::ostream& operator<< (std::ostream& stream, const vec2& vector)
 {
-	stream << "Vec {" << vector.x << ", " << vector.y <<"}";
+	stream << "Vec2: {" << vector.x << ", " << vector.y <<"}";
 	return stream;
 }
-
-
 
 vec2& vec2::add(const vec2& other)
 {
